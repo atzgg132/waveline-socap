@@ -66,6 +66,12 @@ export function Filters({
           </select>
         </label>
       ) : null}
+      <Select
+        label="socap_claimed"
+        value={filters.socap_claimed}
+        onChange={(v) => set("socap_claimed", v)}
+        options={["true", "false"]}
+      />
       <button
         type="button"
         className="reset"
@@ -77,6 +83,7 @@ export function Filters({
             asset_type: "",
             is_video: "",
             wave: defaultWave,
+            socap_claimed: "",
           })
         }
       >

@@ -1,4 +1,4 @@
-# APPLY — SoCap Thinker-Writer
+# APPLY — SoCap Technical Generalist
 
 **Status:** personal fields filled by Arnav 2026-09-15. Do not invent bio, metrics, or outreach. No email to Vijay until Arnav says send.
 
@@ -24,8 +24,9 @@
 |----------|----------|
 | Live ledger | https://temporary-racing-aurora-0ktwi02.vercel.app |
 | Repo | https://github.com/atzgg132/waveline-socap |
-| Corpus | `data/launches.json` (69 rows; Wispr Flow X-wave depth) |
-| Insight | `INSIGHT.md` (Insight A — draft craft / taste QA) |
+| Corpus | `data/launches.json` (72 rows: Wispr Flow X-wave + 3 Poly AI public rows) |
+| Harness | `harness/` — X API v2 (optional bearer) + oEmbed + Open Graph + Product Hunt |
+| Insight | `INSIGHT.md` (Insight A — draft craft / taste QA; honest S/A note) |
 | Method | `/method` in the app |
 
 ## Non-claims
@@ -33,3 +34,4 @@
 - Public sources only. No private creator rates or contracts.
 - Metrics null unless visible on the cited page.
 - Not affiliated with Social Capital Inc.
+- Why SoCap left blank on purpose.

@@ -1,0 +1,198 @@
+{
+  "started": "2026-09-15T08:59:05.458Z",
+  "mode": "dry-run",
+  "apis": {
+    "x_api_v2": {
+      "used": false,
+      "skipped": true,
+      "reason": "X_BEARER_TOKEN unset — dry-run skips live X. Reviewer: set token and rerun."
+    },
+    "oembed": {
+      "used": true,
+      "skipped": false,
+      "reason": "GET youtube.com/oembed and publish.x.com/oembed for 6 URLs"
+    },
+    "open_graph": {
+      "used": true,
+      "skipped": false,
+      "reason": "HTTP GET + og: meta parse for 6 pages"
+    },
+    "product_hunt": {
+      "used": false,
+      "skipped": false,
+      "reason": "public HTML GET of producthunt.com/products/wisprflow (no token)"
+    }
+  },
+  "rows_scanned": 72,
+  "x_ids": [
+    "1840860603432517679",
+    "1840659609486307586",
+    "1840757312912564366",
+    "1840759592353226960",
+    "1840775837890773296",
+    "1840794657816469965",
+    "1840874909834080493",
+    "1841660296290590898",
+    "1970080319383720300",
+    "2024462413085687845",
+    "2025981424470479008",
+    "2025981429142994963",
+    "2025981433832247406",
+    "2025983122907795858",
+    "2025987216192012552",
+    "2025997626064400851",
+    "2026034462749028757",
+    "2026268845347164322",
+    "2026298282511901041",
+    "2026308469599666331",
+    "2026314768408338595",
+    "2026316707934151148",
+    "2026317164383531322",
+    "2026334649522520482",
+    "2026341353140138183",
+    "2026368675431739510",
+    "2026370364776001628",
+    "2026377650097336424",
+    "2026414223845183611",
+    "2026414859173437875",
+    "2026571998630129801",
+    "2026576686096200022",
+    "2026739173453856863",
+    "2026800477401477195",
+    "2026983856705081830",
+    "2027276009679294951",
+    "2027453277109895276",
+    "2049880959563051169",
+    "2053903388212085174",
+    "2091748242673508651"
+  ],
+  "x_metrics": [],
+  "oembed": [
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/tankots/status/2025981424470479008",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "Tanay Kothari",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">We offered 5 people a Porsche 911 GT3 RS if they could get <a href=\"https://x.com/WisprFlow?ref_src=twsrc%5Etfw\">@WisprFlow</a> to make a mistake<br><br>It&#39;s the fastest and most accurate AI voice dictation app that&#39"
+    },
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/polyaivoice/status/2023789465509015972",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "PolyAI",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">PolyAI has raised $200M from Nvidia, Khosla Ventures, and multiple top VCs.<br><br>We&#39;re one of the fastest-growing companies in the UK, and we handle 500M+ calls for:<br><br>• Marriott<br>• PG&amp;E<br>• Gordon Ramsay&"
+    },
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/a_patil/status/1840860603432517679",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "Amol Patil",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Been using for the past few weeks now. Claude + Cursor + Wispr flow combo is 🚀🚀 🚀 <a href=\"https://t.co/KXsK9voYRi\">https://t.co/KXsK9voYRi</a> <a href=\"https://t.co/7lJRklkXPW\">https://t.co/7lJRklkXPW</a></p>&mdash; Amo"
+    },
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/DutchMartin/status/1840659609486307586",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "Martin van Son",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">For those out there wanting to be more efficient, this is a very powerful way of getting that done. Just speak to your computer, and Flow translates your text in a very accurate way on any application. Featured on Product H"
+    },
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/WisprFlow/status/1840757312912564366",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "Wispr Flow",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Today, we’re excited to announce Wispr Flow 🚀 <br><br>Just speak, and Flow writes for you, everywhere on your computer.<br><br>No BS, no waitlist. Feel the magic 👉 <a href=\"https://t.co/ObLJvkmRI4\">https://t.co/ObLJvkmRI4"
+    },
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/SahajGarg6/status/1840759592353226960",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "Sahaj Garg",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Excited to introduce Wispr Flow to the world: voice dictation that actually understands you!<a href=\"https://x.com/tankots?ref_src=twsrc%5Etfw\">@tankots</a> and I set out to build an experience where speaking to a computer "
+    }
+  ],
+  "open_graph": [
+    {
+      "ok": false,
+      "api": "open_graph_http",
+      "url": "https://www.producthunt.com/products/wisprflow",
+      "http_status": 403,
+      "title": "Attention Required! | Cloudflare",
+      "description": null,
+      "image": null
+    },
+    {
+      "ok": true,
+      "api": "open_graph_http",
+      "url": "https://wisprflow.ai/post/flow-on-android",
+      "http_status": 200,
+      "title": "Try Flow on Android. You’ll never type again.",
+      "description": "Today we launched the version we believe those 4 billion people deserve. And it is the first time voice on Android feels like a primary interface, not a fallback feature.",
+      "image": "https://cdn.prod.website-files.com/682fa12727f78b943ed45584/6a8293b3891593bf0ee9ff4b_flow-android-tb%20(1).png"
+    },
+    {
+      "ok": true,
+      "api": "open_graph_http",
+      "url": "https://www.sociallcapital.com/work/wispr-flow",
+      "http_status": 200,
+      "title": "Social Capital Inc.",
+      "description": null,
+      "image": null
+    },
+    {
+      "ok": true,
+      "api": "open_graph_http",
+      "url": "https://techcrunch.com/2026/02/23/wispr-flow-launches-an-android-app-for-ai-powered-dictation/",
+      "http_status": 200,
+      "title": "Wispr Flow launches an Android app for AI-powered dictation | TechCrunch",
+      "description": "The app can support translation in over 100 languages and can work across other apps. Wispr Flow said it has done an infrastructure rewrite that makes dictation 30% faster than before.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/02/Wispr-Flow-Android-hero.jpg?resize=1200,718"
+    },
+    {
+      "ok": true,
+      "api": "open_graph_http",
+      "url": "https://www.sociallcapital.com/work/poly-ai",
+      "http_status": 200,
+      "title": "Social Capital Inc.",
+      "description": null,
+      "image": null
+    },
+    {
+      "ok": true,
+      "api": "open_graph_http",
+      "url": "https://poly.ai/blog/gordon-ramsay-applies-his-no-nonsense-standards-to-customer-service-in-polyai-campaign",
+      "http_status": 200,
+      "title": "Gordon Ramsay | PolyAI",
+      "description": "NEW YORK, Feb 09, 2026 — PolyAI, the conversational AI company powering natural, human-like customer service for some of the world’s largest enterprises, welcomes world-renowned chef and entrepreneur Gordon Ramsay as the face of its new brand campaign. ",
+      "image": "https://cdn.sanity.io/images/u9ir40pr/production/bdcab5fd77fc13530e91a43232fc84601678f394-1920x1080.jpg"
+    }
+  ],
+  "product_hunt": {
+    "ok": false,
+    "api": "producthunt_html",
+    "url": "https://www.producthunt.com/products/wisprflow",
+    "http_status": 403,
+    "title": "Attention Required! | Cloudflare"
+  },
+  "warnings": [
+    "X API skipped (no bearer). oEmbed + Open Graph + Product Hunt still run."
+  ]
+}

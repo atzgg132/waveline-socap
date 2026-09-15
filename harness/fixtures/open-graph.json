@@ -1,0 +1,58 @@
+{
+  "items": [
+    {
+      "ok": false,
+      "api": "open_graph_http",
+      "url": "https://www.producthunt.com/products/wisprflow",
+      "http_status": 403,
+      "title": "Attention Required! | Cloudflare",
+      "description": null,
+      "image": null
+    },
+    {
+      "ok": true,
+      "api": "open_graph_http",
+      "url": "https://wisprflow.ai/post/flow-on-android",
+      "http_status": 200,
+      "title": "Try Flow on Android. You’ll never type again.",
+      "description": "Today we launched the version we believe those 4 billion people deserve. And it is the first time voice on Android feels like a primary interface, not a fallback feature.",
+      "image": "https://cdn.prod.website-files.com/682fa12727f78b943ed45584/6a8293b3891593bf0ee9ff4b_flow-android-tb%20(1).png"
+    },
+    {
+      "ok": true,
+      "api": "open_graph_http",
+      "url": "https://www.sociallcapital.com/work/wispr-flow",
+      "http_status": 200,
+      "title": "Social Capital Inc.",
+      "description": null,
+      "image": null
+    },
+    {
+      "ok": true,
+      "api": "open_graph_http",
+      "url": "https://techcrunch.com/2026/02/23/wispr-flow-launches-an-android-app-for-ai-powered-dictation/",
+      "http_status": 200,
+      "title": "Wispr Flow launches an Android app for AI-powered dictation | TechCrunch",
+      "description": "The app can support translation in over 100 languages and can work across other apps. Wispr Flow said it has done an infrastructure rewrite that makes dictation 30% faster than before.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/02/Wispr-Flow-Android-hero.jpg?resize=1200,718"
+    },
+    {
+      "ok": true,
+      "api": "open_graph_http",
+      "url": "https://www.sociallcapital.com/work/poly-ai",
+      "http_status": 200,
+      "title": "Social Capital Inc.",
+      "description": null,
+      "image": null
+    },
+    {
+      "ok": true,
+      "api": "open_graph_http",
+      "url": "https://poly.ai/blog/gordon-ramsay-applies-his-no-nonsense-standards-to-customer-service-in-polyai-campaign",
+      "http_status": 200,
+      "title": "Gordon Ramsay | PolyAI",
+      "description": "NEW YORK, Feb 09, 2026 — PolyAI, the conversational AI company powering natural, human-like customer service for some of the world’s largest enterprises, welcomes world-renowned chef and entrepreneur Gordon Ramsay as the face of its new brand campaign. ",
+      "image": "https://cdn.sanity.io/images/u9ir40pr/production/bdcab5fd77fc13530e91a43232fc84601678f394-1920x1080.jpg"
+    }
+  ]
+}

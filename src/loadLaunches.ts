@@ -25,7 +25,9 @@ function isRow(value: unknown): value is LaunchRow {
     typeof row.confidence === "string" &&
     CONFIDENCE.has(row.confidence) &&
     typeof row.metrics === "object" &&
-    row.metrics !== null
+    row.metrics !== null &&
+    typeof row.socap_claimed === "boolean" &&
+    typeof row.attribution_note === "string"
   );
 }
 

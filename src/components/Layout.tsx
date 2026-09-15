@@ -12,6 +12,7 @@ export function Layout() {
             Ledger
           </NavLink>
           <NavLink to="/launch/wispr-flow">Wispr Flow</NavLink>
+          <NavLink to="/launch/poly-ai">Poly AI</NavLink>
           <NavLink to="/method">Method</NavLink>
           <a href={`${import.meta.env.BASE_URL}APPLY.md`}>APPLY.md</a>
         </nav>

@@ -43,11 +43,14 @@
 - https://x.com/swapnakpanda/status/2025997626064400851
 - https://x.com/tankots/status/2025981424470479008
 - https://x.com/techczech/status/1840874909834080493
+- https://x.com/polyaivoice/status/2023789465509015972
+- https://www.sociallcapital.com/work/poly-ai
+- https://poly.ai/blog/gordon-ramsay-applies-his-no-nonsense-standards-to-customer-service-in-polyai-campaign
 
 
 ## 2026-09-15 — Arnav X-wave dump
 - Source: Arnav via logged-in X agent; file `data/x-wave-arnav.json` (29 rows, x-wf-001..029).
 - Hero: https://x.com/tankots/status/2025981424470479008 (~4.47M views).
 - Strong attribution: @socapinc quote + VedikaBhaia hiring/process posts.
-- Poly AI: claim-only inside Vedika hiring post (same URL as x-wf-024); no separate Poly hero URL in this pass.
+- Poly AI: Vedika hiring post claims Poly; ledger now has public hero + work page + client blog. Creator-wave for Poly is **not** reconstructed (`data/poly-reject.md`).
 - Merge: dedupe by URL into `launches.json`; do not invent SoCap contracts for medium/low creator rows.

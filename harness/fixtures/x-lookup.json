@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "live": false,
+  "reason": "Public metrics from the ledger + SoCap work-page react-tweet embed. Not a live X API v2 response. Set X_BEARER_TOKEN and rerun without --offline to refresh.",
+  "sample": [
+    {
+      "id": "2025981424470479008",
+      "views": 4470404,
+      "likes": 10780,
+      "replies": 4469,
+      "reposts": 2875,
+      "bookmarks": 3131,
+      "media_key": null,
+      "preview_image_url": null
+    },
+    {
+      "id": "2023789465509015972",
+      "views": null,
+      "likes": 4828,
+      "replies": 1500,
+      "reposts": null,
+      "bookmarks": null,
+      "media_key": null,
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2023781188654022658/img/fP2-hA1kW0HMjrCc.jpg"
+    }
+  ]
+}

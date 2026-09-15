@@ -1,8 +1,9 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { InsightPin } from "../components/InsightPin";
 import { Filters } from "../components/Filters";
 import { ConfidenceBadge } from "../components/ConfidenceBadge";
+import { SocapBadge } from "../components/SocapBadge";
 import { YoutubeOEmbed } from "../components/YoutubeOEmbed";
 import { LedgerTable } from "../components/LedgerTable";
 import {
@@ -25,10 +26,15 @@ export function LaunchPage() {
     () => launches.filter((row) => row.launch_key === launchKey || row.launch_key === slug),
     [launchKey, slug],
   );
+  const defaultWave = launchKey === "wispr_flow" ? "android-x-2026" : "";
   const [filters, setFilters] = useState({
     ...EMPTY_FILTERS,
-    wave: "android-x-2026",
+    wave: defaultWave,
   });
+
+  useEffect(() => {
+    setFilters({ ...EMPTY_FILTERS, wave: defaultWave });
+  }, [launchKey, defaultWave]);
 
   const timeline = useMemo(
     () => sortTimeline(applyFilters(scoped, filters)),
@@ -56,7 +62,7 @@ export function LaunchPage() {
         filters={filters}
         onChange={setFilters}
         includeWave
-        defaultWave="android-x-2026"
+        defaultWave={defaultWave}
       />
       <p className="count">
         {timeline.length} rows · launch_key={scoped[0]?.launch_key} · timeline by posted_offset_hours
@@ -76,6 +82,7 @@ export function LaunchPage() {
             <span>likes {formatMetric(hero.metrics.likes)}</span>
             <span>replies {formatMetric(repliesOf(hero))}</span>
             <ConfidenceBadge value={hero.confidence} />
+            <SocapBadge claimed={hero.socap_claimed} />
           </div>
           <p>
             <a href={hero.url} target="_blank" rel="noreferrer">
@@ -83,6 +90,9 @@ export function LaunchPage() {
             </a>
           </p>
           <p style={{ color: "#8a8a8a" }}>{hero.source_note}</p>
+          {hero.media_preview_url ? (
+            <img className="thumb" src={hero.media_preview_url} alt="" />
+          ) : null}
           <YoutubeOEmbed url={hero.url} />
         </section>
       ) : (
@@ -95,7 +105,8 @@ export function LaunchPage() {
             <div>
               <a href={row.url} target="_blank" rel="noreferrer">
                 {row.hook_text}
-              </a>
+              </a>{" "}
+              <SocapBadge claimed={row.socap_claimed} />
             </div>
             <div style={{ color: "#8a8a8a" }}>
               {handleDisplay(row.author_handle)} · {row.platform} · {row.asset_type} ·{" "}

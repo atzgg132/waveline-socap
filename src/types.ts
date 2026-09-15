@@ -30,6 +30,9 @@ export type LaunchRow = {
   source_note: string;
   confidence: Confidence;
   wave?: string | null;
+  socap_claimed: boolean;
+  attribution_note: string;
+  media_preview_url?: string | null;
 };
 
 export type WorkSnapshot = {
@@ -49,4 +52,5 @@ export type LedgerFilters = {
   asset_type: string;
   is_video: string;
   wave: string;
+  socap_claimed: string;
 };

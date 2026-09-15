@@ -5,3 +5,5 @@ dist
 .vite
 .vercel
 .netlify
+.env
+harness/out

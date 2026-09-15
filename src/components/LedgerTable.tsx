@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ConfidenceBadge } from "./ConfidenceBadge";
+import { SocapBadge } from "./SocapBadge";
 import {
   formatMetric,
   formatOffset,
@@ -26,6 +27,7 @@ export function LedgerTable({ rows }: { rows: LaunchRow[] }) {
             <th>likes</th>
             <th>replies</th>
             <th>conf</th>
+            <th>socap</th>
             <th className="hook">hook</th>
             <th>url</th>
           </tr>
@@ -51,7 +53,17 @@ export function LedgerTable({ rows }: { rows: LaunchRow[] }) {
               <td>
                 <ConfidenceBadge value={row.confidence} />
               </td>
-              <td className="hook">{row.hook_text}</td>
+              <td>
+                <SocapBadge claimed={row.socap_claimed} />
+              </td>
+              <td className="hook">
+                {row.hook_text}
+                {row.media_preview_url ? (
+                  <div>
+                    <img className="thumb" src={row.media_preview_url} alt="" />
+                  </div>
+                ) : null}
+              </td>
               <td>
                 <a href={row.url} target="_blank" rel="noreferrer">
                   open

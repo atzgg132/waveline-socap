@@ -1,6 +1,7 @@
 import type { LaunchRow, LedgerFilters } from "./types";
 
 export const HERO_STATUS_ID = "2025981424470479008";
+export const POLY_HERO_STATUS_ID = "2023789465509015972";
 export const HERO_URL = `https://x.com/tankots/status/${HERO_STATUS_ID}`;
 
 export const EMPTY_FILTERS: LedgerFilters = {
@@ -10,6 +11,7 @@ export const EMPTY_FILTERS: LedgerFilters = {
   asset_type: "",
   is_video: "",
   wave: "",
+  socap_claimed: "",
 };
 
 export const ANDROID_X_WAVES = new Set(["wispr_flow_x", "wispr-android-2026-02"]);
@@ -31,6 +33,8 @@ export function applyFilters(rows: LaunchRow[], filters: LedgerFilters): LaunchR
     if (filters.asset_type && row.asset_type !== filters.asset_type) return false;
     if (filters.is_video === "true" && row.is_video !== true) return false;
     if (filters.is_video === "false" && row.is_video !== false) return false;
+    if (filters.socap_claimed === "true" && row.socap_claimed !== true) return false;
+    if (filters.socap_claimed === "false" && row.socap_claimed !== false) return false;
     if (filters.wave === "android-x-2026") {
       if (!row.wave || !ANDROID_X_WAVES.has(row.wave)) return false;
     } else if (filters.wave && row.wave !== filters.wave) {
@@ -41,7 +45,11 @@ export function applyFilters(rows: LaunchRow[], filters: LedgerFilters): LaunchR
 }
 
 export function isT0Hero(row: LaunchRow): boolean {
-  return row.url.includes(HERO_STATUS_ID) || row.asset_type === "hero_video";
+  return (
+    row.asset_type === "hero_video" ||
+    row.url.includes(HERO_STATUS_ID) ||
+    row.url.includes(POLY_HERO_STATUS_ID)
+  );
 }
 
 export function sortTimeline(rows: LaunchRow[]): LaunchRow[] {

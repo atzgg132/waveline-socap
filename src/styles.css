@@ -244,6 +244,20 @@ tr:hover td {
   border-style: dashed;
 }
 
+.badge.socap {
+  margin-left: 4px;
+  letter-spacing: 0.04em;
+}
+
+.thumb {
+  display: block;
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  margin-top: 8px;
+  border: 1px solid var(--line);
+}
+
 .hero {
   border: 1px solid #fff;
   padding: 14px 16px;

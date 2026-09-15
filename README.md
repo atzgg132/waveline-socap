@@ -1,48 +1,78 @@
 # Waveline — public SoCap creator-wave ledger
 
-Static reconstruction of public posts around Social Capital Inc. (SoCap) and the Wispr Flow Android launch. Not affiliated. Compiled for a SoCap application.
+Static reconstruction of public posts around Social Capital Inc. (SoCap), with a **runnable multi-API harness** in-repo. Not affiliated. Compiled for a SoCap **Technical Generalist** application.
 
-Live paths:
+Live: https://temporary-racing-aurora-0ktwi02.vercel.app
 
-- `/` — Insight A pinned + ledger table with filters (`launch_key`, `platform`, `author_type`, `asset_type`, `is_video`, `wave`)
-- `/launch/wispr-flow` — T-0 hero first, then `posted_offset_hours` (nulls last)
-- `/method` — collection notes, limitations, non-claims, `/work` fetch note, YouTube oEmbed wiring
-- `/APPLY.md` — application memo (same file as repo-root `APPLY.md`)
+## Routes
 
-## Run
+- `/` — Insight A pinned + ledger (`launch_key`, `platform`, `author_type`, `asset_type`, `is_video`, `wave`, `socap_claimed`)
+- `/launch/wispr-flow` — T-0 Wispr hero first, then `posted_offset_hours` (nulls last)
+- `/launch/poly-ai` — Poly AI public rows (work-page hero + blog; not a creator wave)
+- `/method` — collection notes, harness, `/work` fetch, non-claims
+- `/APPLY.md` — application memo (same as repo-root `APPLY.md`)
+
+## Run the app
 
 ```bash
 npm install
 npm run dev      # http://localhost:5173
-npm run build    # tsc + Vite; also GET sociallcapital.com/work into src/data/work-snapshot.json
+npm run build    # tsc + Vite; also GET sociallcapital.com/work
 npm run preview
 ```
 
 `npm run build` must pass. The build copies `data/` into `dist/data/`.
 
+## Run the harness (required for the S-shaped claim)
+
+The ledger alone is item-3 (A-tier: LLM/text tool over a complex public corpus). **S-tier here is the harness**: specialised, connects to more than one external API/app.
+
+```bash
+npm run harness              # live oEmbed + Open Graph + Product Hunt HTML; skip X if no token
+npm run harness:offline      # fixtures only
+node harness/run.mjs --apply # merge X public_metrics into data/launches.json (needs bearer)
+```
+
+Env (copy `.env.example` → `.env`; never commit secrets):
+
+| Variable | Used for |
+|----------|----------|
+| `X_BEARER_TOKEN` | X API v2 `GET /2/tweets` — metrics + media preview |
+| `PRODUCTHUNT_TOKEN` | Product Hunt GraphQL. Optional; public HTML is the no-key path |
+| `YOUTUBE_API_KEY` | Unused. YouTube path is oEmbed (no key). X posts use `publish.x.com/oembed`. |
+
+Docs: [`harness/README.md`](harness/README.md). Sample output: [`harness/fixtures/sample-run.json`](harness/fixtures/sample-run.json).
+
+This VM often has **no live X bearer**. Code + fixtures ship so a reviewer with keys can run `--apply`. Unauthenticated dry-run still hits ≥2 APIs (oEmbed, Open Graph, Product Hunt HTML).
+
 ## Data
 
-Source of truth: [`data/launches.json`](data/launches.json) (69 rows). Do not invent rows.
+Source of truth: [`data/launches.json`](data/launches.json) (72 rows). Do not invent rows.
+
+- 69 Wispr Flow rows (X-wave depth from `data/x-wave-arnav.json`)
+- 3 Poly AI rows: client hero, SoCap work page, client blog — see [`data/poly-reject.md`](data/poly-reject.md) for what was **not** reconstructed
 
 Also in-repo:
 
-- [`data/x-wave-arnav.json`](data/x-wave-arnav.json) — 29-row X dump (x-wf-001..029); merged by URL
-- [`data/sources.md`](data/sources.md) — every URL in the ledger plus dump notes
+- [`data/x-wave-arnav.json`](data/x-wave-arnav.json) — 29-row X dump (x-wf-001..029)
+- [`data/sources.md`](data/sources.md) — every URL in the ledger
 - [`data/thesis-checkpoint.md`](data/thesis-checkpoint.md) — Insight A checkpoint
 - [`INSIGHT.md`](INSIGHT.md) — pinned wording on `/`
-- [`APPLY.md`](APPLY.md) — application memo (personal fields filled by Arnav; Why SoCap left blank). Do not email. Live copy: [`/APPLY.md`](./public/APPLY.md)
+- [`APPLY.md`](APPLY.md) — Technical Generalist memo (personal fields filled by Arnav; Why SoCap left blank). Do not email.
 
 Schema (required unless marked optional):
 
-`id`, `launch_key`, `client`, `date`, `datetime_utc`, `asset_type`, `platform`, `author_handle`, `author_name`, `author_type`, `followers_approx`, `is_video`, `hook_type`, `hook_text`, `posted_offset_hours`, `metrics` (`views`, `likes`, `replies` and/or `comments`, `reposts`, `bookmarks`), `url`, `source_note`, `confidence` (`high` | `medium` | `low`), `wave` (optional)
+`id`, `launch_key`, `client`, `date`, `datetime_utc`, `asset_type`, `platform`, `author_handle`, `author_name`, `author_type`, `followers_approx`, `is_video`, `hook_type`, `hook_text`, `posted_offset_hours`, `metrics`, `url`, `source_note`, `confidence` (`high` | `medium` | `low`), `socap_claimed` (boolean), `attribution_note`, `wave` (optional), `media_preview_url` (optional OG/X poster)
 
-`launch_key` in this corpus is `wispr_flow`. The route slug is `wispr-flow`.
+`launch_key` values: `wispr_flow`, `poly_ai`. Route slugs: `wispr-flow`, `poly-ai`.
+
+`socap_claimed` is true only where **public** evidence exists (SoCap official/staff, SoCap work pages, Tanay hero via `@socapinc` QT, Vijay LinkedIn amp, Poly hero on the work page). Creators stay false. Notes explain the evidence; they do not invent contracts.
 
 ## Add a row
 
-1. Append one JSON object to `data/launches.json` with the fields above. Use `null` for unknown metrics, offsets, or follower counts.
-2. Paste the URL under “In launches.json” in `data/sources.md`.
-3. If it is an X-wave item, keep `data/x-wave-arnav.json` in sync or note why it is ledger-only.
+1. Append one JSON object to `data/launches.json`. Use `null` for unknown metrics, offsets, or follower counts.
+2. Set `socap_claimed` + `attribution_note` from public evidence only (or run `npm run encode-attribution` then edit the note).
+3. Paste the URL under “In launches.json” in `data/sources.md`.
 4. Run `npm run build`. Confirm the row on `/` and that **open** hits the real URL.
 
 Do not add a row without a public URL. Do not mark `confidence: high` without a primary source. Do not invent a SoCap contract for a creator quote.
@@ -57,18 +87,19 @@ Full text: `INSIGHT.md`.
 
 ## Known gaps
 
-- X wave for this Wispr Android drop is in `data/launches.json` (merged from `data/x-wave-arnav.json`).
-- Medium/low creator rows are launch-adjacent; unpaid vs contracted is unproven unless tagged `socap_staff` / `socap_official` / `client_official`.
+- Wispr X wave is reconstructed. Poly is **not** a creator-wave reconstruction (hero + work page + blog only).
+- Medium/low creator rows are launch-adjacent; unpaid vs contracted is unproven unless `socap_claimed` is true.
 - `followers_approx` is often null — cannot test follower-rank order from this file alone.
-- No YouTube URLs in the current JSON; oEmbed is wired and stays quiet.
-- Poly AI is a claim inside a hiring post, not a second hero URL in this pass.
+- No YouTube URLs in JSON; oEmbed is wired and stays quiet until a row has a YouTube URL.
+- Harness `--apply` needs `X_BEARER_TOKEN`; without it, X metrics stay as last public dump / fixture.
 
 ## Non-claims
 
-- Not affiliated with SoCap, Wispr Flow, or listed authors.
-- Not a complete history of every Wispr mention on the internet.
+- Not affiliated with SoCap, Wispr Flow, PolyAI, or listed authors.
+- Not a complete history of every Wispr or Poly mention on the internet.
 - Not proof that every quote-tweet was ghostwritten.
 - Homepage “300M views/mo” is SoCap copy, not a per-row metric here.
+- Why SoCap in APPLY.md is blank on purpose. No email.
 
 ## Deploy
 

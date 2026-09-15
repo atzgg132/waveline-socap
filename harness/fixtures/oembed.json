@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/tankots/status/2025981424470479008",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "Tanay Kothari",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">We offered 5 people a Porsche 911 GT3 RS if they could get <a href=\"https://x.com/WisprFlow?ref_src=twsrc%5Etfw\">@WisprFlow</a> to make a mistake<br><br>It&#39;s the fastest and most accurate AI voice dictation app that&#39"
+    },
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/polyaivoice/status/2023789465509015972",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "PolyAI",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">PolyAI has raised $200M from Nvidia, Khosla Ventures, and multiple top VCs.<br><br>We&#39;re one of the fastest-growing companies in the UK, and we handle 500M+ calls for:<br><br>• Marriott<br>• PG&amp;E<br>• Gordon Ramsay&"
+    },
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/a_patil/status/1840860603432517679",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "Amol Patil",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Been using for the past few weeks now. Claude + Cursor + Wispr flow combo is 🚀🚀 🚀 <a href=\"https://t.co/KXsK9voYRi\">https://t.co/KXsK9voYRi</a> <a href=\"https://t.co/7lJRklkXPW\">https://t.co/7lJRklkXPW</a></p>&mdash; Amo"
+    },
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/DutchMartin/status/1840659609486307586",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "Martin van Son",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">For those out there wanting to be more efficient, this is a very powerful way of getting that done. Just speak to your computer, and Flow translates your text in a very accurate way on any application. Featured on Product H"
+    },
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/WisprFlow/status/1840757312912564366",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "Wispr Flow",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Today, we’re excited to announce Wispr Flow 🚀 <br><br>Just speak, and Flow writes for you, everywhere on your computer.<br><br>No BS, no waitlist. Feel the magic 👉 <a href=\"https://t.co/ObLJvkmRI4\">https://t.co/ObLJvkmRI4"
+    },
+    {
+      "ok": true,
+      "api": "publish.x.com/oembed",
+      "url": "https://x.com/SahajGarg6/status/1840759592353226960",
+      "http_status": 200,
+      "title": null,
+      "thumbnail_url": null,
+      "author_name": "Sahaj Garg",
+      "html": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Excited to introduce Wispr Flow to the world: voice dictation that actually understands you!<a href=\"https://x.com/tankots?ref_src=twsrc%5Etfw\">@tankots</a> and I set out to build an experience where speaking to a computer "
+    }
+  ]
+}
