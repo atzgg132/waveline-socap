@@ -1,0 +1,11 @@
+{
+  "mode": "dry-run",
+  "started": "2026-09-15T09:13:58.203Z",
+  "rows_scanned": 81,
+  "counted_apis": ["oembed", "fxtwitter", "microlink"],
+  "counted_api_count": 3,
+  "s_shaped": true,
+  "last_run_path": "harness/out/last-run.json",
+  "last_run_sha256": "49eab9aba90bbc9a2ff329322b2f4b0459a2ec4000659104707f57c4c1672692",
+  "note": "Local last-run.json is gitignored. This fixture is the counted-API summary from npm run harness on the 81-row ledger. No metrics invented; X v2 skipped without bearer."
+}

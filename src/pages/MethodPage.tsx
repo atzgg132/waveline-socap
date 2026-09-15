@@ -66,6 +66,14 @@ export function MethodPage() {
         <code>/data/launches.json</code> at runtime (bundled JSON is the fallback so the ledger does
         not go empty).
       </p>
+      <p>
+        Last counted dry-run on this branch: <code>counted_api_count=3</code>,{" "}
+        <code>s_shaped=true</code>, APIs <code>oembed</code> + <code>fxtwitter</code> +{" "}
+        <code>microlink</code>. <code>rows_scanned=81</code>. last-run key{" "}
+        <code>sha256:49eab9aba90bbc9a2ff329322b2f4b0459a2ec4000659104707f57c4c1672692</code>{" "}
+        (<code>harness/out/last-run.json</code>, started 2026-09-15T09:13:58.203Z). Summary:{" "}
+        <code>harness/fixtures/counted-dry-run.json</code>.
+      </p>
       <WorkFetchNote />
       <p>
         YouTube oEmbed is also wired at runtime for any <code>youtube.com</code> / <code>youtu.be</code>{" "}
