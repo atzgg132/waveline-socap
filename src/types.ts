@@ -45,6 +45,16 @@ export type WorkSnapshot = {
   note: string;
 };
 
+export type LaunchesFetchNote = {
+  source_url: string;
+  fetched_at_utc: string | null;
+  ok: boolean;
+  http_status: number | null;
+  row_count: number | null;
+  used_for_ledger: boolean;
+  note: string;
+};
+
 export type LedgerFilters = {
   launch_key: string;
   platform: string;

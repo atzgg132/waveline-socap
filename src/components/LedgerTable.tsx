@@ -58,6 +58,9 @@ export function LedgerTable({ rows }: { rows: LaunchRow[] }) {
               </td>
               <td className="hook">
                 {row.hook_text}
+                {row.attribution_note ? (
+                  <div className="attr-note">{row.attribution_note}</div>
+                ) : null}
                 {row.media_preview_url ? (
                   <div>
                     <img className="thumb" src={row.media_preview_url} alt="" />

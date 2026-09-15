@@ -4,10 +4,11 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "prebuild": "node scripts/fetch-work.mjs",
+    "prebuild": "node scripts/fetch-work.mjs && node scripts/validate-launches.mjs",
     "dev": "vite",
-    "build": "node scripts/fetch-work.mjs && tsc --noEmit && vite build",
+    "build": "node scripts/fetch-work.mjs && node scripts/validate-launches.mjs && tsc --noEmit && vite build",
     "preview": "vite preview",
+    "validate": "node scripts/validate-launches.mjs",
     "harness": "node harness/run.mjs --dry-run",
     "harness:offline": "node harness/run.mjs --offline",
     "harness:apply": "node harness/run.mjs --apply",

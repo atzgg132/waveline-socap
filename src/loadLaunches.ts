@@ -33,8 +33,21 @@ function isRow(value: unknown): value is LaunchRow {
 
 export const DATA_FILE = "data/launches.json";
 
-const rows: unknown[] = Array.isArray(raw) ? raw : [];
-export const launches: LaunchRow[] = rows.filter(isRow);
+export function parseLaunches(rawData: unknown): {
+  launches: LaunchRow[];
+  dataFileEmpty: boolean;
+  skippedInvalidCount: number;
+} {
+  const rows: unknown[] = Array.isArray(rawData) ? rawData : [];
+  const launches = rows.filter(isRow);
+  return {
+    launches,
+    dataFileEmpty: rows.length === 0,
+    skippedInvalidCount: rows.length - launches.length,
+  };
+}
 
-export const dataFileEmpty = rows.length === 0;
-export const skippedInvalidCount = rows.length - launches.length;
+const bundled = parseLaunches(raw);
+export const launches = bundled.launches;
+export const dataFileEmpty = bundled.dataFileEmpty;
+export const skippedInvalidCount = bundled.skippedInvalidCount;

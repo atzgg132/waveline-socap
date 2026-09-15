@@ -1,13 +1,15 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import { InsightPin } from "../components/InsightPin";
 import { Filters } from "../components/Filters";
 import { LedgerTable } from "../components/LedgerTable";
-import { applyFilters, EMPTY_FILTERS } from "../ledger";
-import { dataFileEmpty, launches, skippedInvalidCount } from "../loadLaunches";
+import { applyFilters } from "../ledger";
+import { useLaunchData } from "../launchData";
+import { useLedgerFilters } from "../useLedgerFilters";
 
 export function HomePage() {
-  const [filters, setFilters] = useState(EMPTY_FILTERS);
-  const visible = useMemo(() => applyFilters(launches, filters), [filters]);
+  const { launches, dataFileEmpty, skippedInvalidCount, runtimeFetch } = useLaunchData();
+  const { filters, onChange } = useLedgerFilters();
+  const visible = useMemo(() => applyFilters(launches, filters), [launches, filters]);
 
   return (
     <>
@@ -21,9 +23,15 @@ export function HomePage() {
       {skippedInvalidCount > 0 ? (
         <div className="note">Skipped {skippedInvalidCount} objects that failed schema checks.</div>
       ) : null}
-      <Filters rows={launches} filters={filters} onChange={setFilters} includeWave />
+      <Filters rows={launches} filters={filters} onChange={onChange} includeWave />
       <p className="count">
         {visible.length} / {launches.length} rows
+      </p>
+      <p className="count">
+        runtime GET <code>/data/launches.json</code>
+        {runtimeFetch.http_status != null ? ` HTTP ${runtimeFetch.http_status}` : ""}
+        {runtimeFetch.row_count != null ? ` · ${runtimeFetch.row_count} rows` : ""}
+        {runtimeFetch.ok ? " · ok" : runtimeFetch.fetched_at_utc ? " · fallback to bundled" : " · fetching…"}
       </p>
       {visible.length === 0 ? (
         <div className="note">No rows match these filters.</div>

@@ -1,15 +1,16 @@
 # Waveline — public SoCap creator-wave ledger
 
-Static reconstruction of public posts around Social Capital Inc. (SoCap), with a **runnable multi-API harness** in-repo. Not affiliated. Compiled for a SoCap **Technical Generalist** application.
+Static reconstruction of public posts around Social Capital Inc. (SoCap), with a **runnable multi-API harness** in-repo. Not affiliated. Compiled for a SoCap application.
 
-Live: https://temporary-racing-aurora-0ktwi02.vercel.app
+Live: https://temporary-nimble-cyclone-mem3p5g.vercel.app
 
 ## Routes
 
-- `/` — Insight A pinned + ledger (`launch_key`, `platform`, `author_type`, `asset_type`, `is_video`, `wave`, `socap_claimed`)
+- `/` — Insight A pinned + ledger (`product / launch_key` including `poly_ai`, `platform`, `author_type`, `asset_type`, `is_video`, `wave`, `socap_claimed` via `?socap_claimed=true|false`)
 - `/launch/wispr-flow` — T-0 Wispr hero first, then `posted_offset_hours` (nulls last)
-- `/launch/poly-ai` — Poly AI public rows (work-page hero + blog; not a creator wave)
+- `/launch/poly-ai` — Poly AI public contrast rows (not a reconstructed X creator wave)
 - `/method` — collection notes, harness, `/work` fetch, non-claims
+- `/data/launches.json` — 81-row ledger JSON
 - `/APPLY.md` — application memo (same as repo-root `APPLY.md`)
 
 ## Run the app
@@ -49,18 +50,20 @@ This VM often has **no live X bearer**. Code + fixtures ship so a reviewer with 
 
 ## Data
 
-Source of truth: [`data/launches.json`](data/launches.json) (**81** rows). Do not invent rows.
+Source of truth: [`data/launches.json`](data/launches.json) (**81** rows). Keep [`public/data/launches.json`](public/data/launches.json) identical. Do not invent rows.
 
 - 69 Wispr Flow rows (X-wave depth from `data/x-wave-arnav.json`)
-- 12 Poly AI rows (also copied at [`data/poly-contrast.json`](data/poly-contrast.json)) — see [`data/poly-reject.md`](data/poly-reject.md) for what was **not** reconstructed
+- 12 Poly AI public contrast rows (`launch_key=poly_ai`, also copied at [`data/poly-contrast.json`](data/poly-contrast.json)) — see [`data/poly-reject.md`](data/poly-reject.md) for what was **not** reconstructed
 
 Also in-repo:
 
+- [`data/poly-contrast.json`](data/poly-contrast.json) — 12-row Poly AI contrast (same ids as `launch_key=poly_ai`)
+- [`data/poly-reject.md`](data/poly-reject.md) — URLs/claims not added; Poly is not a Wispr-style X-wave dump
 - [`data/x-wave-arnav.json`](data/x-wave-arnav.json) — 29-row X dump (x-wf-001..029)
 - [`data/sources.md`](data/sources.md) — every URL in the ledger
 - [`data/thesis-checkpoint.md`](data/thesis-checkpoint.md) — Insight A checkpoint
 - [`INSIGHT.md`](INSIGHT.md) — pinned wording on `/`
-- [`APPLY.md`](APPLY.md) — Technical Generalist memo (personal fields filled by Arnav; Why SoCap left blank). Do not email.
+- [`APPLY.md`](APPLY.md) — application memo (personal fields filled by Arnav; Why SoCap left blank). Do not email.
 
 Schema (required unless marked optional):
 
@@ -68,11 +71,11 @@ Schema (required unless marked optional):
 
 `launch_key` values: `wispr_flow`, `poly_ai`. Route slugs: `wispr-flow`, `poly-ai`.
 
-`socap_claimed` is true only where **public** evidence exists (SoCap official/staff, SoCap work pages, Tanay hero via `@socapinc` QT, Vijay LinkedIn amp, Poly hero on the work page). Creators stay false. Notes explain the evidence; they do not invent contracts.
+`socap_claimed` is true only where the JSON flag is set from a **public** SoCap page, official/staff author, or a URL the SoCap work page actually features. Creators and unverified amplification stay false. Notes explain the evidence; they do not invent contracts.
 
 ## Add a row
 
-1. Append one JSON object to `data/launches.json`. Use `null` for unknown metrics, offsets, or follower counts.
+1. Append one JSON object to `data/launches.json` **and** `public/data/launches.json`. Use `null` for unknown metrics, offsets, or follower counts.
 2. Set `socap_claimed` + `attribution_note` from public evidence only (or run `npm run encode-attribution` then edit the note).
 3. Paste the URL under “In launches.json” in `data/sources.md`.
 4. Run `npm run build`. Confirm the row on `/` and that **open** hits the real URL.
@@ -89,7 +92,7 @@ Full text: `INSIGHT.md`.
 
 ## Known gaps
 
-- Wispr X wave is reconstructed. Poly is **not** a creator-wave reconstruction (12 public case/campaign/press/LinkedIn rows).
+- Wispr X wave is reconstructed. Poly is **12 public contrast URLs**, not a creator-wave reconstruction (case/campaign/press/LinkedIn).
 - Wispr hero metrics on the ledger are **SoCap work-page embed only** (10.8K likes / 4.5K replies). Views/reposts/bookmarks stay null.
 - Medium/low creator rows are launch-adjacent; unpaid vs contracted is unproven unless `socap_claimed` is true.
 - `followers_approx` is often null — cannot test follower-rank order from this file alone.
@@ -106,6 +109,6 @@ Full text: `INSIGHT.md`.
 
 ## Deploy
 
-Static files in `dist/`. SPA fallback: `vercel.json` / `netlify.toml` rewrite to `index.html`. GitHub Pages workflow builds with `VITE_BASE=/waveline-socap/`.
+Static files in `dist/`. SPA fallback: `vercel.json` / `netlify.toml` rewrite to `index.html` (JSON under `/data/` is not rewritten). GitHub Pages workflow builds with `VITE_BASE=/waveline-socap/`.
 
 `APPLY.md` is copied to the site root as `/APPLY.md` (also linked from the header and footer).

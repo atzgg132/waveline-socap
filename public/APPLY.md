@@ -1,4 +1,4 @@
-# APPLY — SoCap Technical Generalist
+# APPLY — SoCap Thinker-Writer
 
 **Status:** personal fields filled by Arnav 2026-09-15. Do not invent bio, metrics, or outreach. No email to Vijay until Arnav says send.
 
@@ -22,7 +22,7 @@
 
 | Artifact | Location |
 |----------|----------|
-| Live ledger | https://temporary-racing-aurora-0ktwi02.vercel.app |
+| Live ledger | https://temporary-nimble-cyclone-mem3p5g.vercel.app |
 | Repo | https://github.com/atzgg132/waveline-socap |
 | Corpus | `data/launches.json` (81 rows: 69 wispr_flow + 12 poly_ai) |
 | Harness | `harness/` — publish.x.com oEmbed + FixTweet + Microlink (no keys); optional X v2 / PH GraphQL |

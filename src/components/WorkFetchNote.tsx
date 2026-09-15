@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import snapshot from "../data/work-snapshot.json";
+import { publicLaunchesUrl, useLaunchData } from "../launchData";
 import type { WorkSnapshot } from "../types";
 
 const buildSnapshot = snapshot as WorkSnapshot;
 
 export function WorkFetchNote() {
+  const { runtimeFetch } = useLaunchData();
   const [runtime, setRuntime] = useState<WorkSnapshot | null>(null);
 
   useEffect(() => {
@@ -41,18 +43,24 @@ export function WorkFetchNote() {
 
   return (
     <div className="note">
-      <strong>sociallcapital.com/work fetch note.</strong>
+      <strong>Live public APIs.</strong>
       <p>
-        Build: {buildSnapshot.ok ? "ok" : "failed"}
-        {buildSnapshot.http_status != null ? ` HTTP ${buildSnapshot.http_status}` : ""} —{" "}
-        {buildSnapshot.note}
-        {buildSnapshot.title ? ` Title: ${buildSnapshot.title}.` : ""}
+        1. <code>{publicLaunchesUrl()}</code> — {runtimeFetch.ok ? "ok" : "pending/fail"}
+        {runtimeFetch.http_status != null ? ` HTTP ${runtimeFetch.http_status}` : ""}
+        {runtimeFetch.row_count != null ? ` · ${runtimeFetch.row_count} rows` : ""} —{" "}
+        {runtimeFetch.note}
       </p>
       <p>
-        Runtime: {runtime ? (runtime.ok ? "ok" : "failed") : "trying…"}
-        {runtime?.http_status != null ? ` HTTP ${runtime.http_status}` : ""} —{" "}
-        {runtime?.note ?? ""}
-        {runtime?.title ? ` Title: ${runtime.title}.` : ""}
+        2. sociallcapital.com/work — build {buildSnapshot.ok ? "ok" : "failed"}
+        {buildSnapshot.http_status != null ? ` HTTP ${buildSnapshot.http_status}` : ""} —{" "}
+        {buildSnapshot.note}
+        {buildSnapshot.title ? ` Title: ${buildSnapshot.title}.` : ""} Runtime:{" "}
+        {runtime ? (runtime.ok ? "ok" : "failed") : "trying…"}
+        {runtime?.http_status != null ? ` HTTP ${runtime.http_status}` : ""} — {runtime?.note ?? ""}
+      </p>
+      <p>
+        Also: <code>npm run harness</code> (publish.x.com oEmbed + Open Graph, no keys). Titles/status
+        only. No metrics invented from these fetches.
       </p>
       <p>
         Source:{" "}

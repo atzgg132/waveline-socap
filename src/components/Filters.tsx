@@ -23,7 +23,7 @@ export function Filters({
   return (
     <div className="filters">
       <Select
-        label="launch_key"
+        label="product / launch_key"
         value={filters.launch_key}
         onChange={(v) => set("launch_key", v)}
         options={uniqueValues(rows, "launch_key")}

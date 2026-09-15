@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import { useParams } from "react-router-dom";
 import { InsightPin } from "../components/InsightPin";
 import { Filters } from "../components/Filters";
@@ -17,24 +17,32 @@ import {
   repliesOf,
   sortTimeline,
 } from "../ledger";
-import { launches } from "../loadLaunches";
+import { useLaunchData } from "../launchData";
+import { socapClaimedFromParam, useLedgerFilters } from "../useLedgerFilters";
 
 export function LaunchPage() {
   const { slug = "" } = useParams();
   const launchKey = launchKeyFromSlug(slug);
+  const { launches } = useLaunchData();
   const scoped = useMemo(
     () => launches.filter((row) => row.launch_key === launchKey || row.launch_key === slug),
-    [launchKey, slug],
+    [launchKey, slug, launches],
   );
   const defaultWave = launchKey === "wispr_flow" ? "android-x-2026" : "";
-  const [filters, setFilters] = useState({
+  const { filters, onChange } = useLedgerFilters({
     ...EMPTY_FILTERS,
     wave: defaultWave,
   });
 
   useEffect(() => {
-    setFilters({ ...EMPTY_FILTERS, wave: defaultWave });
-  }, [launchKey, defaultWave]);
+    onChange({
+      ...EMPTY_FILTERS,
+      wave: defaultWave,
+      socap_claimed: socapClaimedFromParam(
+        new URLSearchParams(window.location.search).get("socap_claimed"),
+      ),
+    });
+  }, [launchKey, defaultWave, onChange]);
 
   const timeline = useMemo(
     () => sortTimeline(applyFilters(scoped, filters)),
@@ -60,7 +68,7 @@ export function LaunchPage() {
       <Filters
         rows={scoped}
         filters={filters}
-        onChange={setFilters}
+        onChange={onChange}
         includeWave
         defaultWave={defaultWave}
       />
@@ -90,6 +98,7 @@ export function LaunchPage() {
             </a>
           </p>
           <p style={{ color: "#8a8a8a" }}>{hero.source_note}</p>
+          {hero.attribution_note ? <p className="attr-note">{hero.attribution_note}</p> : null}
           {hero.media_preview_url ? (
             <img className="thumb" src={hero.media_preview_url} alt="" />
           ) : null}
@@ -113,6 +122,7 @@ export function LaunchPage() {
               {row.author_type}
               {row.is_video ? " · video" : ""} · <ConfidenceBadge value={row.confidence} />
             </div>
+            {row.attribution_note ? <div className="attr-note">{row.attribution_note}</div> : null}
           </li>
         ))}
       </ol>
