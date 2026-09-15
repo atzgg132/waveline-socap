@@ -13,14 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Decode gzip.b64 sidecar into x-wave-arnav.json
-        run: |
-          python3 - <<'PY'
-          import gzip, base64, pathlib
-          b64 = pathlib.Path("data/x-wave-arnav.json.gz.b64").read_text().strip()
-          raw = gzip.decompress(base64.b64decode(b64))
-          pathlib.Path("data/x-wave-arnav.json").write_bytes(raw)
-          print("wrote", len(raw), "bytes")
-          PY
+        run: python3 -c "import gzip,base64,pathlib; p=pathlib.Path('data/x-wave-arnav.json.gz.b64'); raw=gzip.decompress(base64.b64decode(p.read_text().strip())); pathlib.Path('data/x-wave-arnav.json').write_bytes(raw); print('wrote', len(raw))"
       - name: Commit decoded file
         run: |
           git config user.name "github-actions[bot]"
