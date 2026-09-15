@@ -1,9 +1,9 @@
-/** Keep in lockstep with /INSIGHT.md — CoS/Lead Insight A. */
+/** Keep in lockstep with /INSIGHT.md — Insight A direction, placeholder until Lead lock. */
 export const INSIGHT = {
-  status: "A",
-  kicker: "Locked insight",
+  status: "PLACEHOLDER",
+  kicker: "Insight A direction — Lead locks wording by 10:00 UTC",
   claim:
-    "SoCap does not win launches by owning the biggest follower graph. On Wispr Flow’s Android drop, the scarce resource is draft capacity and taste QA: a stranger-hook hero film on an already-viral founder account, then voice-matched posts that share talking points without identical captions.",
+    "Already-viral accounts + voice-matched ghostwriting / Thinker-Writer draft QA is the scarce resource — not the biggest follower graph. A stranger-hook hero on an already-viral founder account, then voice-matched posts that share talking points without identical captions.",
   evidence: [
     {
       label: "Tanay’s Porsche/Android hero (~4.47M views)",
