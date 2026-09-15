@@ -1,6 +1,10 @@
 # Sources
 
+Public pages only. No private rates, leaked decks, or invented posts/metrics.
+Corpus companion to `data/launches.json` (69 CoS rows). Low-confidence or unverifiable candidates go to `rejected.md`.
+
 ## In launches.json
+
 - https://techcrunch.com/2026/02/23/wispr-flow-launches-an-android-app-for-ai-powered-dictation/
 - https://wisprflow.ai/post/flow-on-android
 - https://www.consumerstartups.com/p/wispr-flow-kill-the-keyboard
@@ -44,10 +48,16 @@
 - https://x.com/tankots/status/2025981424470479008
 - https://x.com/techczech/status/1840874909834080493
 
-
 ## 2026-09-15 — Arnav X-wave dump
+
 - Source: Arnav via logged-in X agent; file `data/x-wave-arnav.json` (29 rows, x-wf-001..029).
 - Hero: https://x.com/tankots/status/2025981424470479008 (~4.47M views).
 - Strong attribution: @socapinc quote + VedikaBhaia hiring/process posts.
 - Poly AI: claim-only inside Vedika hiring post (same URL as x-wf-024); no separate Poly hero URL in this pass.
 - Merge: dedupe by URL into `launches.json`; do not invent SoCap contracts for medium/low creator rows.
+
+## Rules
+
+- Metrics are integers only when visible on the public page; otherwise `null` (rendered as — in the app).
+- Do not copy company-level view claims onto a row.
+- Influencer posts require a public URL.
