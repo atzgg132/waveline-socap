@@ -1,21 +1,27 @@
 # APPLY (stub)
 
-Application note for Social Capital Inc. **Not affiliated.** This file is a placeholder for the written take-home memo.
+Placeholder application memo for Social Capital Inc. **Not affiliated.**
 
-## Artifact
+Personal fields below are **for Arnav to fill**. Do not invent a bio, metrics, outreach, or a hiring-manager email.
 
-- Repo: `https://github.com/atzgg132/waveline-socap`
-- App: public ledger of one reconstructed creator wave (Wispr Flow depth; Poly AI contrast)
-- Data contract: `docs/SCHEMA.md` / `data/SCHEMA.md`
+## Applicant (Arnav fills)
 
-## What this is for
+| Field | Value |
+|-------|--------|
+| Name | _[Arnav fills]_ |
+| Email | _[Arnav fills]_ |
+| LinkedIn | _[Arnav fills]_ |
+| Why SoCap | _[Arnav fills]_ |
+| Video (if needed) | _[Arnav fills]_ |
 
-A dense, falsifiable reconstruction from **public pages only**. The product is the ledger + method, not a chatbot or a motion piece.
+## Artifact (already in repo)
 
-## Still empty (on purpose)
+- Repo: https://github.com/atzgg132/waveline-socap
+- Ledger: public reconstruction of one creator wave (Wispr Flow depth)
+- Insight: see `INSIGHT.md` (Insight A — draft craft / taste QA)
+- Data: `data/launches.json` / `public/data/launches.json` (CoS corpus)
+- Contract: `docs/SCHEMA.md`
 
-- Why SoCap / why this slice
-- What I would do in week one on the real team
-- The actual insight (see `INSIGHT.md` — stub until Corpus fills)
+## Non-claims
 
-Fill this file when the corpus is past stub rows. Do not pad with unverified metrics.
+Does not invent creator rates, view counts, or private process. Null metrics stay null.
