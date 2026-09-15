@@ -44,7 +44,7 @@ Site-native support:
 ## Update 2026-09-15 (corpus expansion → 42 rows)
 
 **Insight A not weakened.** New public evidence *strengthens* the scarce ghostwriting/draft-QA claim:
-- Vedika Thinker-Writer hiring post: role is explicitly to **write viral Twitter threads for influencers** SoCap works with (taste + research + craft as hired capacity).
+- Vedika hiring post: role is explicitly to **write viral Twitter threads for influencers** SoCap works with (taste + research + craft as hired capacity).
 - Creator Relationships Associate hiring: creator recruit/negotiate/pay as separate scarce ops role; names Wispr Flow among example launches.
 - Algorithm post aside (“20x more if you count client posts”) implies high volume of client-facing drafting — still human-process framing, not “AI prompt replaces QA.”
 
@@ -61,8 +61,8 @@ Site-native support:
 **Insight A holds and strengthens.** Public X evidence now shows:
 1. Official SoCap attribution (`@socapinc` quotes the hero; Vedika claims Wispr + Poly for `@socapinc`).
 2. Sequenced wave around one hero film: thread cutdowns at T0, staff keyword reply +7m, company QT, then ~20–50h creator quotes with **native-voice captions** sharing talking points (not identical paste).
-3. Company account distribution << founder hero (`WisprFlow` cutdown ~14.5k views vs hero ~4.47M).
-4. Scarce resource framing: Thinker-Writer hiring + stranger-hook process note + native-voice rule → **draft craft / taste QA**, not follower-rank ordering.
+3. Company account distribution << founder hero (`WisprFlow` cutdown vs work-page hero embed 10.8K likes / 4.5K replies; hero views not on that page).
+4. Scarce resource framing: public hiring post + stranger-hook process note + native-voice rule → **draft craft / taste QA**, not follower-rank ordering.
 
 **Falsify:** identical captions posted in follower-rank order with no shared talking-point variance.
 
