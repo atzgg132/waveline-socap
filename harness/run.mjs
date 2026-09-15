@@ -2,15 +2,19 @@
 /**
  * Waveline multi-API harness.
  *
- * External APIs / apps (always more than one; keys optional):
- *   1. X API v2  GET /2/tweets          — metrics + media_keys (needs X_BEARER_TOKEN)
- *   2. oEmbed    YouTube + publish.x.com — title/author/html (no key)
- *   3. Open Graph HTTP GET + meta parse — og:title / og:image from live pages
- *   4. Product Hunt GraphQL or public HTML product page
+ * Counted as APIs (JSON / oEmbed — HTML scrape does NOT count):
+ *   1. publish.x.com/oembed + youtube.com/oembed
+ *   2. FixTweet  GET https://api.fxtwitter.com/status/:id  (no key)
+ *   3. Microlink GET https://api.microlink.io/?url=         (no key)
+ *   4. X API v2  GET /2/tweets   (X_BEARER_TOKEN)
+ *   5. Product Hunt GraphQL      (PRODUCTHUNT_TOKEN)
  *
- *   node harness/run.mjs --dry-run      # live unauthenticated APIs; skip X if no token
+ * Not counted toward S (page fetch / meta parse):
+ *   Open Graph HTML, Product Hunt HTML (often Cloudflare 403)
+ *
+ *   node harness/run.mjs --dry-run      # live unauthenticated APIs
  *   node harness/run.mjs --offline      # fixtures only
- *   node harness/run.mjs --apply        # merge X public_metrics into data/launches.json
+ *   node harness/run.mjs --apply        # merge official X v2 metrics only
  *
  * Never prints secrets. Does not email. Does not invent metrics.
  */
@@ -41,14 +45,19 @@ const report = {
   started,
   mode: OFFLINE ? "offline" : APPLY ? "apply" : "dry-run",
   apis: {
-    x_api_v2: { used: false, skipped: true, reason: "no token or offline" },
-    oembed: { used: false, skipped: true, reason: "" },
-    open_graph: { used: false, skipped: true, reason: "" },
-    product_hunt: { used: false, skipped: true, reason: "" },
+    x_api_v2: { used: false, skipped: true, reason: "no token or offline", counts_as_api: true },
+    oembed: { used: false, skipped: true, reason: "", counts_as_api: true },
+    fxtwitter: { used: false, skipped: true, reason: "", counts_as_api: true },
+    microlink: { used: false, skipped: true, reason: "", counts_as_api: true },
+    product_hunt_graphql: { used: false, skipped: true, reason: "", counts_as_api: true },
+    open_graph_html: { used: false, skipped: true, reason: "scrape — not counted", counts_as_api: false },
+    product_hunt_html: { used: false, skipped: true, reason: "scrape — not counted", counts_as_api: false },
   },
   rows_scanned: 0,
   x_ids: [],
   x_metrics: [],
+  fxtwitter: [],
+  microlink: [],
   oembed: [],
   open_graph: [],
   product_hunt: null,
@@ -70,29 +79,28 @@ if (OFFLINE) {
   const xFix = readFixture("x-lookup.json", "offline fixture");
   report.x_metrics = xFix.sample || [];
   report.oembed = readFixture("oembed.json", "offline fixture").items || [];
+  report.fxtwitter = readFixture("fxtwitter.json", "offline fixture").items || [];
+  report.microlink = readFixture("microlink.json", "offline fixture").items || [];
   report.open_graph = readFixture("open-graph.json", "offline fixture").items || [];
   report.product_hunt = readFixture("product-hunt.json", "offline fixture");
-  report.apis.oembed = { used: true, skipped: false, reason: "fixture" };
-  report.apis.open_graph = { used: true, skipped: false, reason: "fixture" };
-  report.apis.product_hunt = { used: true, skipped: false, reason: "fixture" };
-  report.apis.x_api_v2 = {
-    used: true,
-    skipped: false,
-    reason: "fixture",
-    live: false,
-  };
+  report.apis.oembed = { used: true, skipped: false, reason: "fixture", counts_as_api: true };
+  report.apis.fxtwitter = { used: true, skipped: false, reason: "fixture", counts_as_api: true };
+  report.apis.microlink = { used: true, skipped: false, reason: "fixture", counts_as_api: true };
+  report.apis.open_graph_html = { used: true, skipped: false, reason: "fixture scrape", counts_as_api: false };
+  report.apis.product_hunt_html = { used: true, skipped: false, reason: "fixture scrape", counts_as_api: false };
+  report.apis.x_api_v2 = { used: true, skipped: false, reason: "fixture", live: false, counts_as_api: true };
 } else {
   if (X_BEARER) {
     const x = await lookupX(xIds, X_BEARER);
-    report.apis.x_api_v2 = x.meta;
+    report.apis.x_api_v2 = { ...x.meta, counts_as_api: true };
     report.x_metrics = x.metrics;
   } else {
     report.apis.x_api_v2 = {
       used: false,
       skipped: true,
-      reason: "X_BEARER_TOKEN unset — dry-run skips live X. Reviewer: set token and rerun.",
+      counts_as_api: true,
+      reason: "X_BEARER_TOKEN unset — official X v2 skipped. FixTweet JSON still runs.",
     };
-    report.warnings.push("X API skipped (no bearer). oEmbed + Open Graph + Product Hunt still run.");
   }
 
   const oembedTargets = pickOembedTargets(rows);
@@ -103,7 +111,40 @@ if (OFFLINE) {
   report.apis.oembed = {
     used: report.oembed.some((x) => x.ok),
     skipped: false,
+    counts_as_api: true,
     reason: `GET youtube.com/oembed and publish.x.com/oembed for ${oembedTargets.length} URLs`,
+  };
+
+  const fxIds = unique([
+    ...rows
+      .filter(
+        (r) =>
+          r.url.includes("2025981424470479008") || r.url.includes("2023789465509015972"),
+      )
+      .map((r) => tweetIdFromUrl(r.url)),
+    ...xIds.slice(0, 4),
+  ]).filter(Boolean).slice(0, 6);
+  report.fxtwitter = [];
+  for (const id of fxIds) {
+    report.fxtwitter.push(await fetchFixTweet(id));
+  }
+  report.apis.fxtwitter = {
+    used: report.fxtwitter.some((x) => x.ok),
+    skipped: false,
+    counts_as_api: true,
+    reason: `GET api.fxtwitter.com/status/:id for ${fxIds.length} ids`,
+  };
+
+  const microTargets = pickOgTargets(rows).slice(0, 4);
+  report.microlink = [];
+  for (const url of microTargets) {
+    report.microlink.push(await fetchMicrolink(url));
+  }
+  report.apis.microlink = {
+    used: report.microlink.some((x) => x.ok),
+    skipped: false,
+    counts_as_api: true,
+    reason: `GET api.microlink.io for ${microTargets.length} URLs`,
   };
 
   const ogTargets = pickOgTargets(rows);
@@ -111,21 +152,31 @@ if (OFFLINE) {
   for (const url of ogTargets) {
     report.open_graph.push(await fetchOpenGraph(url));
   }
-  report.apis.open_graph = {
+  report.apis.open_graph_html = {
     used: report.open_graph.some((x) => x.ok),
     skipped: false,
-    reason: `HTTP GET + og: meta parse for ${ogTargets.length} pages`,
+    counts_as_api: false,
+    reason: `HTML GET + og: meta parse for ${ogTargets.length} pages (scrape, not counted)`,
   };
 
   const phUrl = rows.find((r) => /producthunt\.com/.test(r.url))?.url;
   report.product_hunt = await fetchProductHunt(phUrl, PH_TOKEN);
-  report.apis.product_hunt = {
-    used: Boolean(report.product_hunt?.ok),
-    skipped: false,
-    reason: PH_TOKEN
-      ? "Product Hunt GraphQL api.producthunt.com/v2/api/graphql"
-      : "public HTML GET of producthunt.com/products/wisprflow (no token)",
-  };
+  if (PH_TOKEN) {
+    report.apis.product_hunt_graphql = {
+      used: Boolean(report.product_hunt?.ok && report.product_hunt?.api === "producthunt_graphql"),
+      skipped: false,
+      counts_as_api: true,
+      reason: "POST api.producthunt.com/v2/api/graphql",
+    };
+  } else {
+    report.apis.product_hunt_html = {
+      used: Boolean(report.product_hunt?.ok),
+      skipped: false,
+      counts_as_api: false,
+      reason: "public HTML GET (scrape, not counted; Cloudflare often 403)",
+    };
+    report.warnings.push("PRODUCTHUNT_TOKEN unset — PH GraphQL skipped. HTML scrape does not count as an API.");
+  }
 }
 
 mkdirSync(OUT_DIR, { recursive: true });
@@ -148,6 +199,14 @@ if (WRITE_FIXTURES) {
   writeFileSync(
     join(FIXTURE_DIR, "oembed.json"),
     `${JSON.stringify({ items: report.oembed }, null, 2)}\n`,
+  );
+  writeFileSync(
+    join(FIXTURE_DIR, "fxtwitter.json"),
+    `${JSON.stringify({ items: report.fxtwitter }, null, 2)}\n`,
+  );
+  writeFileSync(
+    join(FIXTURE_DIR, "microlink.json"),
+    `${JSON.stringify({ items: report.microlink }, null, 2)}\n`,
   );
   writeFileSync(
     join(FIXTURE_DIR, "open-graph.json"),
@@ -186,16 +245,28 @@ if (APPLY && report.x_metrics.length) {
   report.warnings.push("--apply requested but no X metrics to merge.");
 }
 
+const counted = Object.entries(report.apis).filter(
+  ([, v]) => v.counts_as_api && v.used && !v.skipped,
+);
+
 console.log(
   JSON.stringify(
     {
       mode: report.mode,
+      counted_apis: counted.map(([k]) => k),
+      counted_api_count: counted.length,
+      s_shaped: counted.length >= 2,
       apis: Object.fromEntries(
-        Object.entries(report.apis).map(([k, v]) => [k, { used: v.used, skipped: v.skipped, reason: v.reason }]),
+        Object.entries(report.apis).map(([k, v]) => [
+          k,
+          { used: v.used, skipped: v.skipped, counts_as_api: v.counts_as_api, reason: v.reason },
+        ]),
       ),
       x_ids: xIds.length,
       oembed_ok: report.oembed.filter((x) => x.ok).length,
-      og_ok: report.open_graph.filter((x) => x.ok).length,
+      fxtwitter_ok: (report.fxtwitter || []).filter((x) => x.ok).length,
+      microlink_ok: (report.microlink || []).filter((x) => x.ok).length,
+      og_html_ok: report.open_graph.filter((x) => x.ok).length,
       product_hunt_ok: Boolean(report.product_hunt?.ok),
       out: "harness/out/last-run.json",
       warnings: report.warnings,
@@ -292,6 +363,49 @@ async function lookupX(ids, token) {
     };
   });
   return { meta, metrics };
+}
+
+async function fetchFixTweet(id) {
+  const endpoint = `https://api.fxtwitter.com/status/${id}`;
+  try {
+    const res = await fetch(endpoint, { headers: { Accept: "application/json" } });
+    const data = res.ok ? await res.json() : null;
+    const t = data?.tweet || {};
+    return {
+      ok: Boolean(res.ok && t.id),
+      api: "api.fxtwitter.com",
+      id,
+      http_status: res.status,
+      likes: t.likes ?? null,
+      replies: t.replies ?? null,
+      retweets: t.retweets ?? null,
+      bookmarks: t.bookmarks ?? null,
+      views: t.views ?? null,
+      preview_image_url: t.media?.videos?.[0]?.thumbnail_url || t.media?.photos?.[0]?.url || null,
+    };
+  } catch (err) {
+    return { ok: false, api: "api.fxtwitter.com", id, error: String(err) };
+  }
+}
+
+async function fetchMicrolink(url) {
+  const endpoint = `https://api.microlink.io/?url=${encodeURIComponent(url)}`;
+  try {
+    const res = await fetch(endpoint, { headers: { Accept: "application/json" } });
+    const json = res.ok ? await res.json() : null;
+    const d = json?.data || {};
+    return {
+      ok: Boolean(res.ok && json?.status === "success"),
+      api: "api.microlink.io",
+      url,
+      http_status: res.status,
+      title: d.title ?? null,
+      description: d.description ?? null,
+      image: d.image?.url ?? null,
+    };
+  } catch (err) {
+    return { ok: false, api: "api.microlink.io", url, error: String(err) };
+  }
 }
 
 async function fetchOembed(url) {

@@ -25,21 +25,23 @@ npm run preview
 
 ## Run the harness (required for the S-shaped claim)
 
-The ledger alone is item-3 (A-tier: LLM/text tool over a complex public corpus). **S-tier here is the harness**: specialised, connects to more than one external API/app.
+The ledger alone is item-3 (A-tier: text tool over a complex public corpus). **S-tier here is the harness**: specialised, connects to more than one external **JSON/oEmbed API** (HTML scrape does not count).
 
 ```bash
-npm run harness              # live oEmbed + Open Graph + Product Hunt HTML; skip X if no token
+npm run harness              # live publish.x.com oEmbed + FixTweet + Microlink; skip official X if no token
 npm run harness:offline      # fixtures only
-node harness/run.mjs --apply # merge X public_metrics into data/launches.json (needs bearer)
+node harness/run.mjs --apply # merge official X public_metrics into data/launches.json (needs bearer)
 ```
 
 Env (copy `.env.example` → `.env`; never commit secrets):
 
 | Variable | Used for |
 |----------|----------|
-| `X_BEARER_TOKEN` | X API v2 `GET /2/tweets` — metrics + media preview |
-| `PRODUCTHUNT_TOKEN` | Product Hunt GraphQL. Optional; public HTML is the no-key path |
+| `X_BEARER_TOKEN` | Official X API v2 `GET /2/tweets` |
+| `PRODUCTHUNT_TOKEN` | Product Hunt GraphQL (counted). Without it, PH HTML is scrape-only and often 403 |
 | `YOUTUBE_API_KEY` | Unused. YouTube path is oEmbed (no key). X posts use `publish.x.com/oembed`. |
+
+Counted no-key APIs: `publish.x.com/oembed`, `api.fxtwitter.com`, `api.microlink.io`. Open Graph HTML parse is extra, not counted.
 
 Docs: [`harness/README.md`](harness/README.md). Sample output: [`harness/fixtures/sample-run.json`](harness/fixtures/sample-run.json).
 

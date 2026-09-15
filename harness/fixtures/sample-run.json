@@ -1,26 +1,48 @@
 {
-  "started": "2026-09-15T08:59:05.458Z",
+  "started": "2026-09-15T09:04:22.589Z",
   "mode": "dry-run",
   "apis": {
     "x_api_v2": {
       "used": false,
       "skipped": true,
-      "reason": "X_BEARER_TOKEN unset — dry-run skips live X. Reviewer: set token and rerun."
+      "counts_as_api": true,
+      "reason": "X_BEARER_TOKEN unset — official X v2 skipped. FixTweet JSON still runs."
     },
     "oembed": {
       "used": true,
       "skipped": false,
+      "counts_as_api": true,
       "reason": "GET youtube.com/oembed and publish.x.com/oembed for 6 URLs"
     },
-    "open_graph": {
+    "fxtwitter": {
       "used": true,
       "skipped": false,
-      "reason": "HTTP GET + og: meta parse for 6 pages"
+      "counts_as_api": true,
+      "reason": "GET api.fxtwitter.com/status/:id for 6 ids"
     },
-    "product_hunt": {
+    "microlink": {
+      "used": true,
+      "skipped": false,
+      "counts_as_api": true,
+      "reason": "GET api.microlink.io for 4 URLs"
+    },
+    "product_hunt_graphql": {
+      "used": false,
+      "skipped": true,
+      "reason": "",
+      "counts_as_api": true
+    },
+    "open_graph_html": {
+      "used": true,
+      "skipped": false,
+      "counts_as_api": false,
+      "reason": "HTML GET + og: meta parse for 6 pages (scrape, not counted)"
+    },
+    "product_hunt_html": {
       "used": false,
       "skipped": false,
-      "reason": "public HTML GET of producthunt.com/products/wisprflow (no token)"
+      "counts_as_api": false,
+      "reason": "public HTML GET (scrape, not counted; Cloudflare often 403)"
     }
   },
   "rows_scanned": 72,
@@ -67,6 +89,118 @@
     "2091748242673508651"
   ],
   "x_metrics": [],
+  "fxtwitter": [
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "2025981424470479008",
+      "http_status": 200,
+      "likes": 10780,
+      "replies": 4469,
+      "retweets": 2875,
+      "bookmarks": 3131,
+      "views": 4470422,
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2025975637392207872/img/eTPK-PWkdG_uOiUe.jpg"
+    },
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "2023789465509015972",
+      "http_status": 200,
+      "likes": 4762,
+      "replies": 1470,
+      "retweets": 535,
+      "bookmarks": 4395,
+      "views": 3543279,
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2023781188654022658/img/fP2-hA1kW0HMjrCc.jpg"
+    },
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "1840860603432517679",
+      "http_status": 200,
+      "likes": 2,
+      "replies": 1,
+      "retweets": 0,
+      "bookmarks": 0,
+      "views": 218,
+      "preview_image_url": null
+    },
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "1840659609486307586",
+      "http_status": 200,
+      "likes": 2,
+      "replies": 0,
+      "retweets": 0,
+      "bookmarks": 0,
+      "views": 52,
+      "preview_image_url": null
+    },
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "1840757312912564366",
+      "http_status": 200,
+      "likes": 1361,
+      "replies": 157,
+      "retweets": 167,
+      "bookmarks": 991,
+      "views": 1684458,
+      "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1840737594386391040/pu/img/HGeYQSicgtTWSw3A.jpg"
+    },
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "1840759592353226960",
+      "http_status": 200,
+      "likes": 21,
+      "replies": 1,
+      "retweets": 3,
+      "bookmarks": 0,
+      "views": 1168,
+      "preview_image_url": null
+    }
+  ],
+  "microlink": [
+    {
+      "ok": false,
+      "api": "api.microlink.io",
+      "url": "https://www.producthunt.com/products/wisprflow",
+      "http_status": 400,
+      "title": null,
+      "description": null,
+      "image": null
+    },
+    {
+      "ok": true,
+      "api": "api.microlink.io",
+      "url": "https://wisprflow.ai/post/flow-on-android",
+      "http_status": 200,
+      "title": "Try Flow on Android. You’ll never type again.",
+      "description": "Today we launched the version we believe those 4 billion people deserve. And it is the first time voice on Android feels like a primary interface, not a fallback feature.",
+      "image": "https://cdn.prod.website-files.com/682fa12727f78b943ed45584/6a8293b3891593bf0ee9ff4b_flow-android-tb%20(1).png"
+    },
+    {
+      "ok": true,
+      "api": "api.microlink.io",
+      "url": "https://www.sociallcapital.com/work/wispr-flow",
+      "http_status": 200,
+      "title": "Social Capital Inc.",
+      "description": "Social Capital Inc. is building the distribution infrastructure for generational companies.",
+      "image": "https://pbs.twimg.com/profile_images/1461615841733058561/-lzaqDLJ_normal.jpg"
+    },
+    {
+      "ok": true,
+      "api": "api.microlink.io",
+      "url": "https://techcrunch.com/2026/02/23/wispr-flow-launches-an-android-app-for-ai-powered-dictation/",
+      "http_status": 200,
+      "title": "Wispr Flow launches an Android app for AI-powered dictation | TechCrunch",
+      "description": "The app can support translation in over 100 languages and can work across other apps. Wispr Flow said it has done an infrastructure rewrite that makes dictation 30% faster than before.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/02/Wispr-Flow-Android-hero.jpg?resize=1200,718"
+    }
+  ],
   "oembed": [
     {
       "ok": true,
@@ -193,6 +327,6 @@
     "title": "Attention Required! | Cloudflare"
   },
   "warnings": [
-    "X API skipped (no bearer). oEmbed + Open Graph + Product Hunt still run."
+    "PRODUCTHUNT_TOKEN unset — PH GraphQL skipped. HTML scrape does not count as an API."
   ]
 }

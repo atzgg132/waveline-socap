@@ -8,4 +8,4 @@ Poly AI is in the ledger as a SoCap work-page hero plus client blog, not as a re
 
 **Falsify this:** if the wave were identical captions ordered by follower count, or if `@socapinc` never claimed the launch.
 
-**Tier:** S for the in-repo multi-API harness: live **publish.x.com oEmbed** + **Open Graph** with no keys; Product Hunt GraphQL and X API v2 when tokens are set. Item-3 ledger alone would be A. Do not read this as “SoCap production S.”
+**Tier:** S for the in-repo harness when it reports `counted_api_count >= 2` on JSON/oEmbed surfaces (`publish.x.com/oembed`, `api.fxtwitter.com`, `api.microlink.io`; official X v2 / PH GraphQL when tokens are set). HTML scrape does not count. Item-3 ledger alone would be A. Do not read this as “SoCap production S.”

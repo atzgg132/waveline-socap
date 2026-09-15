@@ -1099,11 +1099,12 @@
       "bookmarks": 3131
     },
     "url": "https://x.com/tankots/status/2025981424470479008",
-    "source_note": "Verified hero. Founder post, ~157s video, Android launch + Porsche stunt + giveaway. Candidate id 2025981424470479008 matches.",
+    "source_note": "Verified hero. Founder post, ~157s video, Android launch + Porsche stunt + giveaway. Metrics from Arnav logged-in X dump (views ~4.47M). SoCap work-page embed shows 10.8K likes / 4.5K replies (views not on embed). Poster: pbs amplify_video_thumb.",
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": true,
-    "attribution_note": "SoCap claimed this founder post via @socapinc QT (2026268845347164322). Founder-authored, not SoCap-authored."
+    "attribution_note": "SoCap claimed this founder post via @socapinc QT (2026268845347164322). Founder-authored, not SoCap-authored.",
+    "media_preview_url": "https://pbs.twimg.com/amplify_video_thumb/2025975637392207872/img/eTPK-PWkdG_uOiUe.jpg"
   },
   {
     "id": "x-wf-002",

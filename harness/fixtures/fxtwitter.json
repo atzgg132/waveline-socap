@@ -1,0 +1,76 @@
+{
+  "items": [
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "2025981424470479008",
+      "http_status": 200,
+      "likes": 10780,
+      "replies": 4469,
+      "retweets": 2875,
+      "bookmarks": 3131,
+      "views": 4470422,
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2025975637392207872/img/eTPK-PWkdG_uOiUe.jpg"
+    },
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "2023789465509015972",
+      "http_status": 200,
+      "likes": 4762,
+      "replies": 1470,
+      "retweets": 535,
+      "bookmarks": 4395,
+      "views": 3543279,
+      "preview_image_url": "https://pbs.twimg.com/amplify_video_thumb/2023781188654022658/img/fP2-hA1kW0HMjrCc.jpg"
+    },
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "1840860603432517679",
+      "http_status": 200,
+      "likes": 2,
+      "replies": 1,
+      "retweets": 0,
+      "bookmarks": 0,
+      "views": 218,
+      "preview_image_url": null
+    },
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "1840659609486307586",
+      "http_status": 200,
+      "likes": 2,
+      "replies": 0,
+      "retweets": 0,
+      "bookmarks": 0,
+      "views": 52,
+      "preview_image_url": null
+    },
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "1840757312912564366",
+      "http_status": 200,
+      "likes": 1361,
+      "replies": 157,
+      "retweets": 167,
+      "bookmarks": 991,
+      "views": 1684458,
+      "preview_image_url": "https://pbs.twimg.com/ext_tw_video_thumb/1840737594386391040/pu/img/HGeYQSicgtTWSw3A.jpg"
+    },
+    {
+      "ok": true,
+      "api": "api.fxtwitter.com",
+      "id": "1840759592353226960",
+      "http_status": 200,
+      "likes": 21,
+      "replies": 1,
+      "retweets": 3,
+      "bookmarks": 0,
+      "views": 1168,
+      "preview_image_url": null
+    }
+  ]
+}

@@ -53,10 +53,11 @@ export function MethodPage() {
 
       <h2>External wiring — harness</h2>
       <p>
-        <code>npm run harness</code> calls more than one external API/app: X API v2 (optional bearer),
-        YouTube + <code>publish.x.com</code> oEmbed, Open Graph HTTP parse, Product Hunt GraphQL or
-        public HTML (PH often Cloudflare-403 without a token). Dry-run works with no secrets. Docs:{" "}
-        <code>harness/README.md</code>.
+        <code>npm run harness</code> calls more than one counted API:{" "}
+        <code>publish.x.com/oembed</code>, <code>api.fxtwitter.com</code>,{" "}
+        <code>api.microlink.io</code>, plus optional X API v2 and Product Hunt GraphQL when tokens
+        exist. Open Graph / PH HTML page fetches are scrape and are not counted. Dry-run works with no
+        secrets. Docs: <code>harness/README.md</code>.
       </p>
       <WorkFetchNote />
       <p>

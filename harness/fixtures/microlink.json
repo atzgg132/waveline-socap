@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "ok": false,
+      "api": "api.microlink.io",
+      "url": "https://www.producthunt.com/products/wisprflow",
+      "http_status": 400,
+      "title": null,
+      "description": null,
+      "image": null
+    },
+    {
+      "ok": true,
+      "api": "api.microlink.io",
+      "url": "https://wisprflow.ai/post/flow-on-android",
+      "http_status": 200,
+      "title": "Try Flow on Android. You’ll never type again.",
+      "description": "Today we launched the version we believe those 4 billion people deserve. And it is the first time voice on Android feels like a primary interface, not a fallback feature.",
+      "image": "https://cdn.prod.website-files.com/682fa12727f78b943ed45584/6a8293b3891593bf0ee9ff4b_flow-android-tb%20(1).png"
+    },
+    {
+      "ok": true,
+      "api": "api.microlink.io",
+      "url": "https://www.sociallcapital.com/work/wispr-flow",
+      "http_status": 200,
+      "title": "Social Capital Inc.",
+      "description": "Social Capital Inc. is building the distribution infrastructure for generational companies.",
+      "image": "https://pbs.twimg.com/profile_images/1461615841733058561/-lzaqDLJ_normal.jpg"
+    },
+    {
+      "ok": true,
+      "api": "api.microlink.io",
+      "url": "https://techcrunch.com/2026/02/23/wispr-flow-launches-an-android-app-for-ai-powered-dictation/",
+      "http_status": 200,
+      "title": "Wispr Flow launches an Android app for AI-powered dictation | TechCrunch",
+      "description": "The app can support translation in over 100 languages and can work across other apps. Wispr Flow said it has done an infrastructure rewrite that makes dictation 30% faster than before.",
+      "image": "https://techcrunch.com/wp-content/uploads/2026/02/Wispr-Flow-Android-hero.jpg?resize=1200,718"
+    }
+  ]
+}
