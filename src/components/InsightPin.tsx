@@ -4,7 +4,7 @@ export function InsightPin() {
   return (
     <aside className="pin" aria-label="Pinned insight">
       <div className="pin-kicker">
-        <strong>INSIGHT {INSIGHT.status}</strong>
+        <strong>{INSIGHT.status}</strong>
         {INSIGHT.kicker}
       </div>
       <div className="pin-body">

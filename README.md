@@ -42,12 +42,12 @@ npm run sync-data    # copy data/launches.json → public/data/launches.json
 
 | Path | Role |
 |------|------|
-| `data/launches.json` | Corpus source of truth (**69** CoS rows) |
+| `data/launches.json` | Corpus source of truth (**42** CoS rows) |
 | `public/data/launches.json` | Runtime file the SPA fetches (`/data/launches.json`) |
 
 To refresh rows: edit `data/launches.json` (locked shape in `docs/SCHEMA.md`), run `npm run sync-data`, commit **both** files, redeploy.
 
-Additive `wave` values in this pack: `wispr-ph-2024-09`, `wispr-android-2026-02`, `wispr-wom`, `wispr_flow_x`.
+Additive `wave` values in this pack: `wispr-ph-2024-09`, `wispr-android-2026-02`, `wispr-wom`. The Wave filter uses this field.
 
 ## Deploy on Vercel
 
@@ -68,7 +68,7 @@ npx vercel --prod
 | File | Role |
 |------|------|
 | `APPLY.md` | Application memo (personal fields filled; Why SoCap blank on purpose) |
-| `INSIGHT.md` | Insight A (draft craft / taste QA) |
+| `INSIGHT.md` | Insight A direction (placeholder until Lead lock 10:00 UTC) |
 | `docs/SCHEMA.md` | Locked row contract |
 | `data/sources.md` | How rows were verified |
 | `data/rejected.md` | What was considered and not added |

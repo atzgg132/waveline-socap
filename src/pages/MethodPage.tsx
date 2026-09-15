@@ -5,17 +5,23 @@ export function MethodPage() {
       <h1 className="page-title">How this ledger is built</h1>
       <p className="page-lead">
         Reconstruction from pages anyone can open. Not affiliated with Social
-        Capital Inc. Corpus is 69 CoS rows (Wispr Flow depth, including the{" "}
-        <code>wispr_flow_x</code> X wave).
+        Capital Inc. Corpus is 42 CoS rows (all <code>launch_key=wispr_flow</code>
+        ). Additive <code>wave</code>: <code>wispr-ph-2024-09</code>,{" "}
+        <code>wispr-android-2026-02</code>, <code>wispr-wom</code>.
+      </p>
+
+      <p className="banner">
+        <strong>X.com scrape returned 403</strong> — waiting on Arnav for post
+        URLs. A denser X wave is blocked until those URLs land. Do not invent
+        x.com rows to fill the gap.
       </p>
 
       <h2>Slice</h2>
       <p>
-        Influencers / creators primary. Depth launch is Wispr Flow (
-        <code>launch_key=wispr_flow</code>). CoS schema omits <code>wave</code>;
-        the app keeps it as an additive field for the Wave filter:{" "}
-        <code>wispr-ph-2024-09</code>, <code>wispr-android-2026-02</code>,{" "}
-        <code>wispr-wom</code>, <code>wispr_flow_x</code>.
+        Influencers primary (31 / 42 in this pack). Depth launch is Wispr Flow.
+        CoS schema omits <code>wave</code>; the app keeps it as an additive
+        field for the Wave filter: <code>wispr-ph-2024-09</code>,{" "}
+        <code>wispr-android-2026-02</code>, <code>wispr-wom</code>.
       </p>
 
       <h2>What counts as a row</h2>
@@ -51,9 +57,9 @@ export function MethodPage() {
             </td>
             <td>wave</td>
             <td>
-              Exact wave string: <code>wispr-ph-2024-09</code>,{" "}
-              <code>wispr-android-2026-02</code>, <code>wispr-wom</code>,{" "}
-              <code>wispr_flow_x</code>.
+              Exact additive <code>wave</code> string:{" "}
+              <code>wispr-ph-2024-09</code>, <code>wispr-android-2026-02</code>,{" "}
+              <code>wispr-wom</code>.
             </td>
           </tr>
           <tr>
