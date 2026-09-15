@@ -59,7 +59,9 @@ export function WorkFetchNote() {
         {runtime?.http_status != null ? ` HTTP ${runtime.http_status}` : ""} — {runtime?.note ?? ""}
       </p>
       <p>
-        Also: <code>npm run harness</code> (publish.x.com oEmbed + Open Graph, no keys). Titles/status
+        Also: <code>npm run harness</code> counted APIs (no keys):{" "}
+        <code>publish.x.com/oembed</code>, <code>api.fxtwitter.com</code>,{" "}
+        <code>api.microlink.io</code>. Open Graph HTML is scrape and is not counted. Titles/status
         only. No metrics invented from these fetches.
       </p>
       <p>
