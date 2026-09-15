@@ -1,5 +1,31 @@
 [
   {
+    "id": "wf-ph-apatil-2024-09-30",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2024-09-30",
+    "datetime_utc": "2024-09-30T00:00:00Z",
+    "asset_type": "post",
+    "platform": "x",
+    "author_handle": "@a_patil",
+    "author_name": "Amol Patil",
+    "author_type": "influencer",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "demo",
+    "hook_text": "Been using for the past few weeks now. Claude + Cursor + Wispr flow combo is \ud83d\ude80\ud83d\ude80 \ud83d\ude80",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": 218,
+      "likes": 2,
+      "reposts": 0,
+      "comments": 1
+    },
+    "url": "https://x.com/a_patil/status/1840860603432517679",
+    "source_note": "X API; quotes official announce on launch day",
+    "confidence": "high"
+  },
+  {
     "id": "wf-ph-dutchmartin-2024-09-30",
     "launch_key": "wispr_flow",
     "client": "Wispr Flow",
@@ -104,6 +130,32 @@
     "confidence": "high"
   },
   {
+    "id": "wf-ph-nabeelqu-2024-10-03",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2024-10-03",
+    "datetime_utc": "2024-10-03T00:00:00Z",
+    "asset_type": "post",
+    "platform": "x",
+    "author_handle": "@nabeelqu",
+    "author_name": "Nabeel S. Qureshi",
+    "author_type": "influencer",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "demo",
+    "hook_text": "I've been using Wispr Flow lately and I think the \"talk to your computer instead of typing\" paradigm is finally here.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": 6409,
+      "likes": 56,
+      "reposts": 0,
+      "comments": 4
+    },
+    "url": "https://x.com/nabeelqu/status/1841660296290590898",
+    "source_note": "X API public_metrics; post-PH-week creator endorsement",
+    "confidence": "high"
+  },
+  {
     "id": "wf-ph-selin-kocalar-2025-03-06",
     "launch_key": "wispr_flow",
     "client": "Wispr Flow",
@@ -127,6 +179,32 @@
     },
     "url": "https://www.linkedin.com/posts/selin-kocalar_heres-how-wispr-flow-went-viral-with-2m-activity-7303502606121754625-Smrq",
     "source_note": "Public LinkedIn. 2M is wave claim in text \u2014 not copied to metrics.",
+    "confidence": "high"
+  },
+  {
+    "id": "wf-ph-kennykhoang-2025-06-13",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2025-06-13",
+    "datetime_utc": "2025-06-13T00:00:00Z",
+    "asset_type": "post",
+    "platform": "linkedin",
+    "author_handle": "@kennykhoang",
+    "author_name": "Kenny Hoang",
+    "author_type": "influencer",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "story",
+    "hook_text": "This \"Time Genie\" is Wispr Flow\u2026 averaging 103 WPM spoken vs ~60 typing \u2014 71% efficiency gain. Post 80% written with Wispr Flow.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://www.linkedin.com/posts/kennykhoang_i-gained-17-minutes-back-every-hour-with-activity-7339354702716784640-i84D",
+    "source_note": "Public LinkedIn creator demo; date from search index",
     "confidence": "high"
   },
   {
@@ -232,6 +310,32 @@
     "url": "https://www.linkedin.com/posts/reidhoffman_what-if-we-got-rid-of-the-keyboard-activity-7402026243107303424-hlu7",
     "source_note": "Public LinkedIn; ties to Possible podcast interview. Soft month from activity era.",
     "confidence": "medium"
+  },
+  {
+    "id": "wf-ph-lisadeng-2025-11-14",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2025-11-14",
+    "datetime_utc": "2025-11-14T00:00:00Z",
+    "asset_type": "post",
+    "platform": "linkedin",
+    "author_handle": "@lisa-deng",
+    "author_name": "Lisa Deng",
+    "author_type": "influencer",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "story",
+    "hook_text": "This post was written 95% by speaking, not typing\u2026 the best tool I've found so far is Wispr Flow.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": 6,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://www.linkedin.com/posts/lisa-deng_this-post-was-written-95-by-speaking-not-activity-7394902127183093760-CFEf",
+    "source_note": "Search snippet showed Reactions: 6; views/reposts not visible. Mapped reactions\u2192likes only.",
+    "confidence": "high"
   },
   {
     "id": "wf-ph-raybould-2025-11-21",
@@ -491,6 +595,32 @@
     },
     "url": "https://www.linkedin.com/posts/allendarnell_ive-been-using-wispr-flow-for-41-weeks-activity-7431752233836355584-dLkb",
     "source_note": "Activity id near Android launch cluster. | evidence: https://www.linkedin.com/posts/allendarnell_ive-been-using-wispr-flow-for-41-weeks-activity-7431752233836355584-dLkb | wave=wispr-android-2026-02 title=LinkedIn: 41 weeks on Wispr Flow",
+    "confidence": "high"
+  },
+  {
+    "id": "wf-android-rubenhassid-2026-02-23",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2026-02-23",
+    "datetime_utc": "2026-02-23T00:00:00Z",
+    "asset_type": "post",
+    "platform": "linkedin",
+    "author_handle": "@ruben-hassid",
+    "author_name": "Ruben Hassid",
+    "author_type": "influencer",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "demo",
+    "hook_text": "I reply to almost every comment\u2026 Go to wispr.ai\u2026 Hold Shift. Talk\u2026 Wispr writes everything. Full disclosure: I partner with Wispr Flow.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://www.linkedin.com/posts/ruben-hassid_i-have-more-than-773473-followers-on-linkedin-activity-7431941032675799040-Sk5C",
+    "source_note": "Activity id near Android launch era; author states partner (and investor in comments). Still influencer-authored public post.",
     "confidence": "high"
   },
   {
