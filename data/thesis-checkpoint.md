@@ -54,3 +54,16 @@ Site-native support:
 
 **Still missing (frank):** live X reply/QT/cutdown URLs around `tankots/status/2025981424470479008`. Environment gets **HTTP 403** on x.com/twitter.com. Search-query list left in `rejected.md` for Arnav. Until those URLs are verified, do not claim a measured multi-creator same-hour wave — only the Apple-style **claim** (About) + **hero + follow-up + hiring-process** evidence.
 
+
+
+## Update 2026-09-15 (X wave landed)
+
+**Insight A holds and strengthens.** Public X evidence now shows:
+1. Official SoCap attribution (`@socapinc` quotes the hero; Vedika claims Wispr + Poly for `@socapinc`).
+2. Sequenced wave around one hero film: thread cutdowns at T0, staff keyword reply +7m, company QT, then ~20–50h creator quotes with **native-voice captions** sharing talking points (not identical paste).
+3. Company account distribution << founder hero (`WisprFlow` cutdown ~14.5k views vs hero ~4.47M).
+4. Scarce resource framing: Thinker-Writer hiring + stranger-hook process note + native-voice rule → **draft craft / taste QA**, not follower-rank ordering.
+
+**Falsify:** identical captions posted in follower-rank order with no shared talking-point variance.
+
+**Still honest:** medium/low creator rows are launch-adjacent; SoCap contracts unproven unless tagged.
