@@ -22,7 +22,7 @@
 
 | Artifact | Location |
 |----------|----------|
-| Live ledger | https://temporary-nimble-cyclone-mem3p5g.vercel.app |
+| Live ledger | https://temporary-swift-orion-0x9pptb.vercel.app |
 | Repo | https://github.com/atzgg132/waveline-socap |
 | Corpus | `data/launches.json` (81 rows: 69 wispr_flow + 12 poly_ai) |
 | Harness | `harness/` — publish.x.com oEmbed + FixTweet + Microlink (no keys); optional X v2 / PH GraphQL |

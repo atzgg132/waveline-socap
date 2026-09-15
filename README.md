@@ -2,7 +2,7 @@
 
 Static reconstruction of public posts around Social Capital Inc. (SoCap), with a **runnable multi-API harness** in-repo. Not affiliated. Compiled for a SoCap application.
 
-Live: https://temporary-nimble-cyclone-mem3p5g.vercel.app
+Live: https://temporary-swift-orion-0x9pptb.vercel.app
 
 ## Routes
 
