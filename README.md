@@ -21,6 +21,7 @@ Vite serves the SPA at `http://localhost:5173`.
 | `/` | Ledger of all rows + URL filters + pinned Insight A |
 | `/launch/wispr-flow` | Chronological depth timeline (`launch_key === "wispr_flow"`) |
 | `/method` | Public-sources method + confidence notes |
+| `/APPLY.md` | Application memo (same as repo-root `APPLY.md`; Why SoCap blank) |
 
 Filters (query params): `product` → client/launch_key; `platform`; `role` → author_type; `wave` → additive `wave`; `confidence`; `from`/`to` on `datetime_utc`.
 
@@ -67,7 +68,7 @@ npx vercel --prod
 
 | File | Role |
 |------|------|
-| `APPLY.md` | Application memo (personal fields filled; Why SoCap blank on purpose) |
+| `APPLY.md` | Application memo (personal fields filled by Arnav; Why SoCap blank on purpose). Live: `/APPLY.md`. Do not email. |
 | `INSIGHT.md` | Insight A (draft craft / taste QA) |
 | `docs/SCHEMA.md` | Locked row contract |
 | `data/sources.md` | How rows were verified |

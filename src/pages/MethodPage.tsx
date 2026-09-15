@@ -120,6 +120,11 @@ export function MethodPage() {
         <li>No private creator rates or leaked docs.</li>
         <li>No invented posts, ties, or quotes.</li>
         <li>No chatbot. No motion mascot. The product is the ledger.</li>
+        <li>
+          No email. See{" "}
+          <a href={`${import.meta.env.BASE_URL}APPLY.md`}>APPLY.md</a> (Why SoCap
+          left blank).
+        </li>
       </ul>
     </article>
   );

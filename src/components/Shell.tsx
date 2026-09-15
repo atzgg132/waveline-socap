@@ -27,6 +27,7 @@ export function Shell({ children }: { children: ReactNode }) {
             </NavLink>
             <NavLink to="/launch/wispr-flow">Wispr Flow</NavLink>
             <NavLink to="/method">Method</NavLink>
+            <a href={`${import.meta.env.BASE_URL}APPLY.md`}>APPLY.md</a>
           </nav>
         </div>
       </header>
@@ -35,7 +36,10 @@ export function Shell({ children }: { children: ReactNode }) {
       </main>
       <footer className="foot">
         <span>Public sources only · null metrics = —</span>
-        <span>Corpus `data/` · runtime `/data/launches.json`</span>
+        <span>
+          Corpus `data/` · runtime `/data/launches.json` ·{" "}
+          <a href={`${import.meta.env.BASE_URL}APPLY.md`}>APPLY.md</a>
+        </span>
       </footer>
     </div>
   );
