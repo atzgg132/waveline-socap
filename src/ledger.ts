@@ -80,7 +80,8 @@ export function formatMetric(value: number | null | undefined): string {
   }
   if (Math.abs(value) >= 1_000) {
     const n = value / 1_000;
-    return `${n.toFixed(n >= 100 ? 0 : n >= 10 ? 1 : 2)}K`.replace(/\.0K$/, "K");
+    const digits = n >= 100 ? 0 : 1;
+    return `${n.toFixed(digits)}K`.replace(/\.0K$/, "K");
   }
   return String(value);
 }
