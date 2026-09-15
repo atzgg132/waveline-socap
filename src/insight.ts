@@ -16,7 +16,7 @@ export const SOCAP_SOURCES = [
 export const EVIDENCE_LINKS = [
   { label: "Tanay hero (X)", href: "https://x.com/tankots/status/2025981424470479008" },
   { label: "@socapinc claim QT", href: "https://x.com/socapinc/status/2026268845347164322" },
-  { label: "Vedika Thinker-Writer", href: "https://x.com/VedikaBhaia/status/2026983856705081830" },
+  { label: "Vedika hiring post", href: "https://x.com/VedikaBhaia/status/2026983856705081830" },
   { label: "WisprFlow cutdown", href: "https://x.com/WisprFlow/status/2026341353140138183" },
   { label: "PolyAI hero (X)", href: "https://x.com/polyaivoice/status/2023789465509015972" },
 ] as const;

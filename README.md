@@ -1,6 +1,6 @@
 # Waveline — public SoCap creator-wave ledger
 
-Static reconstruction of public posts around Social Capital Inc. (SoCap), with a **runnable multi-API harness** in-repo. Not affiliated. Compiled for a SoCap application.
+Static reconstruction of public posts around Social Capital Inc. (SoCap), with a **runnable multi-API harness** in-repo. Not affiliated. Compiled for a SoCap **Technical Generalist** application.
 
 Live: https://temporary-swift-orion-0x9pptb.vercel.app
 
@@ -11,7 +11,7 @@ Live: https://temporary-swift-orion-0x9pptb.vercel.app
 - `/launch/poly-ai` — Poly AI public contrast rows (not a reconstructed X creator wave)
 - `/method` — collection notes, harness, `/work` fetch, non-claims
 - `/data/launches.json` — 81-row ledger JSON
-- `/APPLY.md` — application memo (same as repo-root `APPLY.md`)
+- `/APPLY.md` — Technical Generalist memo (same as repo-root `APPLY.md`)
 
 ## Run the app
 
@@ -63,7 +63,7 @@ Also in-repo:
 - [`data/sources.md`](data/sources.md) — every URL in the ledger
 - [`data/thesis-checkpoint.md`](data/thesis-checkpoint.md) — Insight A checkpoint
 - [`INSIGHT.md`](INSIGHT.md) — pinned wording on `/`
-- [`APPLY.md`](APPLY.md) — application memo (personal fields filled by Arnav; Why SoCap left blank). Do not email.
+- [`APPLY.md`](APPLY.md) — Technical Generalist memo (personal fields filled by Arnav; Why SoCap left blank). Do not email.
 
 Schema (required unless marked optional):
 
