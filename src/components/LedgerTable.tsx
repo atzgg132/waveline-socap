@@ -19,7 +19,7 @@ export function LedgerTable({ rows }: { rows: LaunchRow[] }) {
             <th>offset</th>
             <th>platform</th>
             <th>author</th>
-            <th>type</th>
+            <th>name</th>
             <th>asset</th>
             <th>video</th>
             <th>views</th>
