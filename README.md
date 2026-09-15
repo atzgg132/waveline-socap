@@ -3,7 +3,7 @@
 Public reconstruction of one [Social Capital Inc.](https://sociallcapital.com) (`sociallcapital.com` / `@socapinc`) creator wave (Wispr Flow).
 **Not affiliated.** Compiled for a SoCap application.
 
-Anyone with Node.js 22+ can clone and run this. There is no “scaffold in progress” step.
+Anyone with Node.js 22+ can clone and run this.
 
 ## Quick start
 
