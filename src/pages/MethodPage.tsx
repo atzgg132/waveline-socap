@@ -5,17 +5,17 @@ export function MethodPage() {
       <h1 className="page-title">How this ledger is built</h1>
       <p className="page-lead">
         Reconstruction from pages anyone can open. Not affiliated with Social
-        Capital Inc. Corpus is 69 CoS rows (Wispr Flow depth, including the{" "}
-        <code>wispr_flow_x</code> X wave).
+        Capital Inc. Corpus is 35 CoS rows remapped to the locked schema
+        (Wispr Flow depth; Poly AI contrast).
       </p>
 
       <h2>Slice</h2>
       <p>
-        Influencers / creators primary. Depth launch is Wispr Flow (
-        <code>launch_key=wispr_flow</code>). Waves in-file include{" "}
-        <code>wispr-ph-2024-09</code>, <code>wispr-android-2026-02</code>,{" "}
-        <code>wispr-wom</code>, and <code>wispr_flow_x</code>. X post URLs are in
-        the corpus.
+        Influencers primary. Depth launch is Wispr Flow (
+        <code>launch_key=wispr_flow</code>). Optional contrast is Poly AI. CoS
+        schema has no <code>wave</code> key; the app keeps it as an additive
+        field for the Wave filter: <code>wispr-ph-2024-09</code>,{" "}
+        <code>wispr-android-2026-02</code>, <code>wispr-wom</code>.
       </p>
 
       <h2>What counts as a row</h2>
@@ -23,11 +23,11 @@ export function MethodPage() {
         A row exists only if a public URL can be cited. Hook text is a short
         paraphrase of visible copy — not a fabricated quote. Schema lives in{" "}
         <code>docs/SCHEMA.md</code> (same contract as <code>data/SCHEMA.md</code>
-        ). Open string fields (<code>author_type</code>, <code>asset_type</code>,{" "}
-        <code>hook_type</code>, <code>wave</code>, <code>confidence</code>) are
-        shown as stored — including <code>creator</code>,{" "}
-        <code>socap_staff</code>, <code>client_official</code>,{" "}
-        <code>socap_official</code>.
+        ). Required CoS fields: <code>launch_key</code>, <code>client</code>,{" "}
+        <code>date</code>, <code>datetime_utc</code>, <code>asset_type</code>,{" "}
+        <code>platform</code>, <code>author_*</code>, <code>hook_*</code>,{" "}
+        <code>metrics</code>, <code>url</code>, <code>source_note</code>,{" "}
+        <code>confidence</code>.
       </p>
       <table>
         <thead>
@@ -47,11 +47,12 @@ export function MethodPage() {
           </tr>
           <tr>
             <td>
-              <code>wave</code>
+              <code>wave</code> (additive)
             </td>
             <td>wave</td>
             <td>
-              Exact wave string (e.g. <code>wispr_flow_x</code>).
+              Exact wave string: <code>wispr-ph-2024-09</code>,{" "}
+              <code>wispr-android-2026-02</code>, <code>wispr-wom</code>.
             </td>
           </tr>
           <tr>
@@ -59,7 +60,7 @@ export function MethodPage() {
               <code>author_type</code>
             </td>
             <td>role</td>
-            <td>Whatever the corpus stored — not a closed enum in the app.</td>
+            <td>As stored (influencer, official, …).</td>
           </tr>
           <tr>
             <td>
@@ -73,7 +74,7 @@ export function MethodPage() {
               <code>confidence</code>
             </td>
             <td>confidence</td>
-            <td>high / medium / low as stored. Rejects still live in data/rejected.md.</td>
+            <td>high / medium as stored. low → data/rejected.md.</td>
           </tr>
           <tr>
             <td>
@@ -89,15 +90,15 @@ export function MethodPage() {
       <ul>
         <li>
           <strong>high</strong> — public URL with enough chrome to identify
-          author, time, and platform (including X status URLs).
+          author, time, and platform.
         </li>
         <li>
           <strong>medium</strong> — public but incomplete (e.g. missing a metric
           or a precise offset).
         </li>
         <li>
-          <strong>low</strong> — kept in this file when CoS marked it so; see
-          also <code>data/rejected.md</code>.
+          <strong>low</strong> — not stored here. See <code>data/rejected.md</code>
+          .
         </li>
       </ul>
       <p>

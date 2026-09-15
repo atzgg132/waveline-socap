@@ -37,8 +37,10 @@ export function LaunchPage() {
         </p>
       ) : (
         <p className="banner">
-          Wispr Flow depth. Waves include <code>wispr_flow_x</code> (X URLs in
-          corpus). Filter the home ledger by wave to isolate a drop.
+          Wispr Flow depth. Additive <code>wave</code> values:{" "}
+          <code>wispr-ph-2024-09</code>, <code>wispr-android-2026-02</code>,{" "}
+          <code>wispr-wom</code>. Filter the home ledger by Wave to isolate a
+          drop.
         </p>
       )}
       <Timeline rows={slice} />

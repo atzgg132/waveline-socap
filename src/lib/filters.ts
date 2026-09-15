@@ -82,7 +82,7 @@ export function applyFilters(
         row.client.toLowerCase() === product;
       if (!hit) return false;
     }
-    if (wave && row.wave !== wave && row.launch_key !== wave) return false;
+    if (wave && row.wave !== wave) return false;
     if (platform && row.platform !== platform) return false;
     if (role && row.author_type !== role) return false;
     if (confidence && row.confidence !== confidence) return false;
