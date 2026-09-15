@@ -75,7 +75,11 @@ export function MethodPage() {
         <li>Does not claim every quoted creator was paid or ghostwritten.</li>
         <li>Does not claim follower rank is the ordering principle — that is the falsifier.</li>
         <li>Does not treat SoCap homepage view totals as per-post measurement.</li>
-        <li>Does not send mail. APPLY.md is a draft with blank placeholders.</li>
+        <li>
+          Does not send mail. See{" "}
+          <a href={`${import.meta.env.BASE_URL}APPLY.md`}>APPLY.md</a> (Why SoCap
+          left blank).
+        </li>
       </ul>
 
       <h2>Site pages used</h2>

@@ -13,13 +13,15 @@ export function Layout() {
           </NavLink>
           <NavLink to="/launch/wispr-flow">Wispr Flow</NavLink>
           <NavLink to="/method">Method</NavLink>
+          <a href={`${import.meta.env.BASE_URL}APPLY.md`}>APPLY.md</a>
         </nav>
       </header>
       <main className="page">
         <Outlet />
       </main>
       <footer className="site-footer">
-        Public reconstruction. Not affiliated. Compiled for a SoCap application.
+        Public reconstruction. Not affiliated. Compiled for a SoCap application.{" "}
+        <a href={`${import.meta.env.BASE_URL}APPLY.md`}>APPLY.md</a>
       </footer>
     </div>
   );

@@ -7,6 +7,7 @@ Live paths:
 - `/` — Insight A pinned + ledger table with filters (`launch_key`, `platform`, `author_type`, `asset_type`, `is_video`, `wave`)
 - `/launch/wispr-flow` — T-0 hero first, then `posted_offset_hours` (nulls last)
 - `/method` — collection notes, limitations, non-claims, `/work` fetch note, YouTube oEmbed wiring
+- `/APPLY.md` — application memo (same file as repo-root `APPLY.md`)
 
 ## Run
 
@@ -29,7 +30,7 @@ Also in-repo:
 - [`data/sources.md`](data/sources.md) — every URL in the ledger plus dump notes
 - [`data/thesis-checkpoint.md`](data/thesis-checkpoint.md) — Insight A checkpoint
 - [`INSIGHT.md`](INSIGHT.md) — pinned wording on `/`
-- [`APPLY.md`](APPLY.md) — email draft with blank placeholders; do not send
+- [`APPLY.md`](APPLY.md) — application memo (personal fields filled by Arnav; Why SoCap left blank). Do not email. Live copy: [`/APPLY.md`](./public/APPLY.md)
 
 Schema (required unless marked optional):
 
@@ -72,3 +73,5 @@ Full text: `INSIGHT.md`.
 ## Deploy
 
 Static files in `dist/`. SPA fallback: `vercel.json` / `netlify.toml` rewrite to `index.html`. GitHub Pages workflow builds with `VITE_BASE=/waveline-socap/`.
+
+`APPLY.md` is copied to the site root as `/APPLY.md` (also linked from the header and footer).
