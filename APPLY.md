@@ -1,27 +1,35 @@
-# APPLY (stub)
+# APPLY — SoCap Thinker-Writer
 
-Placeholder application memo for Social Capital Inc. **Not affiliated.**
+**Status:** personal fields filled by Arnav 2026-09-15. Do not invent bio, metrics, or outreach. No email to Vijay until Arnav says send.
 
-Personal fields below are **for Arnav to fill**. Do not invent a bio, metrics, outreach, or a hiring-manager email.
+## Candidate
 
-## Applicant (Arnav fills)
+- Name: Arnav Bhattacharya
+- Age: 22
+- City: Bengaluru
+- Email: arnav@rive.work
+- LinkedIn: https://www.linkedin.com/in/arnav-bhattacharya-3837b9235/
+- Role line: Founder & CTO, Rive (rive.work)
+- X / Twitter: @atzgg132
+- Portfolio / writing samples: https://rive.work · LinkedIn (AI/ML post bar)
 
-| Field | Value |
-|-------|--------|
-| Name | _[Arnav fills]_ |
-| Email | _[Arnav fills]_ |
-| LinkedIn | _[Arnav fills]_ |
-| Why SoCap | _[Arnav fills]_ |
-| Video (if needed) | _[Arnav fills]_ |
+## Why SoCap (< short answer + optional ≤60s screening video)
 
-## Artifact (already in repo)
+- What excites you about this role: _(draft later with Arnav if the form asks — leave blank for now)_
+- Video link (if required by the form):
 
-- Repo: https://github.com/atzgg132/waveline-socap
-- Ledger: public reconstruction of one creator wave (Wispr Flow depth)
-- Insight: see `INSIGHT.md` (Insight A — draft craft / taste QA)
-- Data: `data/launches.json` / `public/data/launches.json` (CoS corpus)
-- Contract: `docs/SCHEMA.md`
+## This take-home package
+
+| Artifact | Location |
+|----------|----------|
+| Live ledger | https://temporary-racing-aurora-0ktwi02.vercel.app |
+| Repo | https://github.com/atzgg132/waveline-socap |
+| Corpus | `data/launches.json` (69 rows; Wispr Flow X-wave depth) |
+| Insight | `INSIGHT.md` (Insight A — draft craft / taste QA) |
+| Method | `/method` in the app |
 
 ## Non-claims
 
-Does not invent creator rates, view counts, or private process. Null metrics stay null.
+- Public sources only. No private creator rates or contracts.
+- Metrics null unless visible on the cited page.
+- Not affiliated with Social Capital Inc.

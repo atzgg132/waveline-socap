@@ -5,17 +5,17 @@ export function MethodPage() {
       <h1 className="page-title">How this ledger is built</h1>
       <p className="page-lead">
         Reconstruction from pages anyone can open. Not affiliated with Social
-        Capital Inc. Corpus is 35 CoS rows remapped to the locked schema
-        (Wispr Flow depth; Poly AI contrast).
+        Capital Inc. Corpus is 69 CoS rows (Wispr Flow depth, including the{" "}
+        <code>wispr_flow_x</code> X wave).
       </p>
 
       <h2>Slice</h2>
       <p>
-        Influencers primary. Depth launch is Wispr Flow (
-        <code>launch_key=wispr_flow</code>). Optional contrast is Poly AI. CoS
-        schema has no <code>wave</code> key; the app keeps it as an additive
-        field for the Wave filter: <code>wispr-ph-2024-09</code>,{" "}
-        <code>wispr-android-2026-02</code>, <code>wispr-wom</code>.
+        Influencers / creators primary. Depth launch is Wispr Flow (
+        <code>launch_key=wispr_flow</code>). CoS schema omits <code>wave</code>;
+        the app keeps it as an additive field for the Wave filter:{" "}
+        <code>wispr-ph-2024-09</code>, <code>wispr-android-2026-02</code>,{" "}
+        <code>wispr-wom</code>, <code>wispr_flow_x</code>.
       </p>
 
       <h2>What counts as a row</h2>
@@ -52,7 +52,8 @@ export function MethodPage() {
             <td>wave</td>
             <td>
               Exact wave string: <code>wispr-ph-2024-09</code>,{" "}
-              <code>wispr-android-2026-02</code>, <code>wispr-wom</code>.
+              <code>wispr-android-2026-02</code>, <code>wispr-wom</code>,{" "}
+              <code>wispr_flow_x</code>.
             </td>
           </tr>
           <tr>

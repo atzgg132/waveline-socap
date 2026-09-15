@@ -5,8 +5,8 @@ Public reconstruction of one [Social Capital Inc.](https://sociallcapital.com) (
 
 - Slice: influencers / creators (videos as evidence)
 - Depth launch: Wispr Flow (`launch_key=wispr_flow`)
-- Additive `wave`: `wispr-ph-2024-09`, `wispr-android-2026-02`, `wispr-wom`
-- Corpus: `data/launches.json` (35 CoS rows)
+- Additive `wave`: `wispr-ph-2024-09`, `wispr-android-2026-02`, `wispr-wom`, `wispr_flow_x`
+- Corpus: `data/launches.json` (69 CoS rows)
 - Runtime (app fetch): `public/data/launches.json`
 
 Does not claim private creator rates, leaked docs, or invented metrics. `null` metrics render as —.
@@ -30,7 +30,7 @@ Filters sync to the URL: `product`, `platform`, `role`, `wave`, `confidence`, `f
 
 - **product** → `client` or `launch_key`
 - **role** → `author_type`
-- **wave** → additive `wave` (`wispr-ph-2024-09`, `wispr-android-2026-02`, `wispr-wom`)
+- **wave** → additive `wave` (`wispr-ph-2024-09`, `wispr-android-2026-02`, `wispr-wom`, `wispr_flow_x`)
 - **from / to** → inclusive UTC range on `datetime_utc` (fallback `date`)
 
 ## Build

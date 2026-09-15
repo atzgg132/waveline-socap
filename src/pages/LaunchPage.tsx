@@ -39,8 +39,8 @@ export function LaunchPage() {
         <p className="banner">
           Wispr Flow depth. Additive <code>wave</code> values:{" "}
           <code>wispr-ph-2024-09</code>, <code>wispr-android-2026-02</code>,{" "}
-          <code>wispr-wom</code>. Filter the home ledger by Wave to isolate a
-          drop.
+          <code>wispr-wom</code>, <code>wispr_flow_x</code>. Filter the home
+          ledger by Wave to isolate a drop.
         </p>
       )}
       <Timeline rows={slice} />
