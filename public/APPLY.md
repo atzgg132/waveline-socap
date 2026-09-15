@@ -24,8 +24,8 @@
 |----------|----------|
 | Live ledger | https://temporary-racing-aurora-0ktwi02.vercel.app |
 | Repo | https://github.com/atzgg132/waveline-socap |
-| Corpus | `data/launches.json` (72 rows: Wispr Flow X-wave + 3 Poly AI public rows) |
-| Harness | `harness/` — X API v2 (optional bearer) + oEmbed + Open Graph + Product Hunt |
+| Corpus | `data/launches.json` (81 rows: 69 wispr_flow + 12 poly_ai) |
+| Harness | `harness/` — publish.x.com oEmbed + FixTweet + Microlink (no keys); optional X v2 / PH GraphQL |
 | Insight | `INSIGHT.md` (Insight A — draft craft / taste QA; honest S/A note) |
 | Method | `/method` in the app |
 

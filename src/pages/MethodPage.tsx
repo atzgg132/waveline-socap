@@ -12,8 +12,9 @@ export function MethodPage() {
     <article className="prose">
       <h1>Method</h1>
       <p>
-        This is a public reconstruction of SoCap-adjacent posts around Wispr Flow, plus a thin Poly AI
-        contrast (work-page hero, not a creator wave). Rows come from{" "}
+        This is a public reconstruction of SoCap-adjacent posts around Wispr Flow, plus a Poly AI
+        contrast packet (12 public rows: work-page embed, campaign/press, raise LinkedIn — not a
+        creator wave). Rows come from{" "}
         <code>data/launches.json</code> ({launches.length} objects). The X-wave dump is also stored at{" "}
         <code>data/x-wave-arnav.json</code> (29 rows, merged by URL into the ledger). Source URLs are
         listed in <code>data/sources.md</code>. Poly gap note: <code>data/poly-reject.md</code>.
@@ -35,8 +36,10 @@ export function MethodPage() {
           process posts, company cutdown, then creator quotes with offsets.
         </li>
         <li>
-          Metrics are copied from the dump or from public pages when present; missing fields stay{" "}
-          <code>null</code>.
+          Metrics are copied from public pages when present (Wispr T-0 hero: SoCap work-page embed
+          likes/replies only). Missing fields stay <code>null</code>. The logged-in X dump is still
+          in <code>data/x-wave-arnav.json</code> for URLs/offsets; dump view counts are not copied
+          onto the hero row.
         </li>
         <li>
           <code>socap_claimed</code> is true only on public SoCap/staff/work-page evidence, the Wispr
@@ -47,7 +50,7 @@ export function MethodPage() {
       <h2>What this ledger now contains</h2>
       <p>
         {xRows} X rows out of {launches.length} total. {polyRows} rows with <code>launch_key=poly_ai</code>
-        (hero + SoCap work page + client blog). Timeline offsets on a launch page use{" "}
+        (also listed in <code>data/poly-contrast.json</code>). Timeline offsets on a launch page use{" "}
         <code>posted_offset_hours</code> (nulls last, T-0 hero first).
       </p>
 

@@ -26,7 +26,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-apatil-2024-09-30",
@@ -55,36 +55,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
-  },
-  {
-    "id": "wf-ph-producthunt-2024-09-30",
-    "launch_key": "wispr_flow",
-    "client": "Wispr Flow",
-    "date": "2024-09-30",
-    "datetime_utc": "2024-09-30T00:00:00Z",
-    "asset_type": "other",
-    "platform": "producthunt",
-    "author_handle": "@WisprFlow",
-    "author_name": "Wispr Flow",
-    "author_type": "official",
-    "followers_approx": null,
-    "is_video": false,
-    "hook_type": "announce",
-    "hook_text": "Wispr Flow — Speak naturally, write perfectly & 3x faster in every app. #1 Product of the Day Sep 30 2024.",
-    "posted_offset_hours": 0,
-    "metrics": {
-      "views": null,
-      "likes": 2737,
-      "reposts": null,
-      "comments": 538
-    },
-    "url": "https://www.producthunt.com/products/wisprflow",
-    "source_note": "Fetched PH products + leaderboard/daily/2024/9/30; 2737 upvotes mapped to likes, 538 comments.",
-    "confidence": "high",
-    "wave": "wispr-ph-2024-09",
-    "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-dutchmartin-2024-09-30",
@@ -113,65 +84,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
-  },
-  {
-    "id": "wf-ph-wisprflow-announce-2024-09-30",
-    "launch_key": "wispr_flow",
-    "client": "Wispr Flow",
-    "date": "2024-09-30",
-    "datetime_utc": "2024-09-30T14:15:17Z",
-    "asset_type": "post",
-    "platform": "x",
-    "author_handle": "@WisprFlow",
-    "author_name": "Wispr Flow",
-    "author_type": "official",
-    "followers_approx": null,
-    "is_video": false,
-    "hook_type": "announce",
-    "hook_text": "Today, we're excited to announce Wispr Flow. Just speak, and Flow writes for you, everywhere on your computer.",
-    "posted_offset_hours": 0,
-    "metrics": {
-      "views": 1684456,
-      "likes": 1361,
-      "reposts": 167,
-      "comments": 157
-    },
-    "url": "https://x.com/WisprFlow/status/1840757312912564366",
-    "source_note": "X API; official seed same day as PH #1. Wave T0 wispr-ph-2024-09.",
-    "confidence": "high",
-    "wave": "wispr-ph-2024-09",
-    "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
-  },
-  {
-    "id": "wf-ph-sahajgarg-2024-09-30",
-    "launch_key": "wispr_flow",
-    "client": "Wispr Flow",
-    "date": "2024-09-30",
-    "datetime_utc": "2024-09-30T14:24:21Z",
-    "asset_type": "post",
-    "platform": "x",
-    "author_handle": "@SahajGarg6",
-    "author_name": "Sahaj Garg",
-    "author_type": "founder",
-    "followers_approx": null,
-    "is_video": false,
-    "hook_type": "announce",
-    "hook_text": "Excited to introduce Wispr Flow to the world: voice dictation that actually understands you!",
-    "posted_offset_hours": 0,
-    "metrics": {
-      "views": 1168,
-      "likes": 21,
-      "reposts": 3,
-      "comments": 1
-    },
-    "url": "https://x.com/SahajGarg6/status/1840759592353226960",
-    "source_note": "X API; co-founder launch-day post.",
-    "confidence": "high",
-    "wave": "wispr-ph-2024-09",
-    "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-heynayeem-2024-09-30",
@@ -200,7 +113,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-krishrshah-2024-09-30",
@@ -229,7 +142,65 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
+  },
+  {
+    "id": "wf-ph-producthunt-2024-09-30",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2024-09-30",
+    "datetime_utc": "2024-09-30T00:00:00Z",
+    "asset_type": "other",
+    "platform": "producthunt",
+    "author_handle": "@WisprFlow",
+    "author_name": "Wispr Flow",
+    "author_type": "official",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "Wispr Flow — Speak naturally, write perfectly & 3x faster in every app. #1 Product of the Day Sep 30 2024.",
+    "posted_offset_hours": 0,
+    "metrics": {
+      "views": null,
+      "likes": 2737,
+      "reposts": null,
+      "comments": 538
+    },
+    "url": "https://www.producthunt.com/products/wisprflow",
+    "source_note": "Fetched PH products + leaderboard/daily/2024/9/30; 2737 upvotes mapped to likes, 538 comments.",
+    "confidence": "high",
+    "wave": "wispr-ph-2024-09",
+    "socap_claimed": false,
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
+  },
+  {
+    "id": "wf-ph-sahajgarg-2024-09-30",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2024-09-30",
+    "datetime_utc": "2024-09-30T14:24:21Z",
+    "asset_type": "post",
+    "platform": "x",
+    "author_handle": "@SahajGarg6",
+    "author_name": "Sahaj Garg",
+    "author_type": "founder",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "Excited to introduce Wispr Flow to the world: voice dictation that actually understands you!",
+    "posted_offset_hours": 0,
+    "metrics": {
+      "views": 1168,
+      "likes": 21,
+      "reposts": 3,
+      "comments": 1
+    },
+    "url": "https://x.com/SahajGarg6/status/1840759592353226960",
+    "source_note": "X API; co-founder launch-day post.",
+    "confidence": "high",
+    "wave": "wispr-ph-2024-09",
+    "socap_claimed": false,
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-techczech-2024-09-30",
@@ -258,7 +229,36 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
+  },
+  {
+    "id": "wf-ph-wisprflow-announce-2024-09-30",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2024-09-30",
+    "datetime_utc": "2024-09-30T14:15:17Z",
+    "asset_type": "post",
+    "platform": "x",
+    "author_handle": "@WisprFlow",
+    "author_name": "Wispr Flow",
+    "author_type": "official",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "Today, we're excited to announce Wispr Flow. Just speak, and Flow writes for you, everywhere on your computer.",
+    "posted_offset_hours": 0,
+    "metrics": {
+      "views": 1684456,
+      "likes": 1361,
+      "reposts": 167,
+      "comments": 157
+    },
+    "url": "https://x.com/WisprFlow/status/1840757312912564366",
+    "source_note": "X API; official seed same day as PH #1. Wave T0 wispr-ph-2024-09.",
+    "confidence": "high",
+    "wave": "wispr-ph-2024-09",
+    "socap_claimed": false,
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-nabeelqu-2024-10-03",
@@ -287,7 +287,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-selin-kocalar-2025-03-06",
@@ -316,7 +316,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-kennykhoang-2025-06-13",
@@ -345,7 +345,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-consumerstartups-2025-08-26",
@@ -374,7 +374,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-wom-jonathan-robinson-li",
@@ -403,7 +403,7 @@
     "confidence": "medium",
     "wave": "wispr-wom",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-reidhoffman-voicepilled-2025-09-16",
@@ -432,7 +432,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-027",
@@ -462,7 +462,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": true,
-    "attribution_note": "SoCap staff public post (Vedika). Attribution is the author, not a creator contract."
+    "attribution_note": "SoCap-associated author or SoCap URL; claim is presence/association, not a verified paid-creator contract."
   },
   {
     "id": "wf-ph-rowancheung-2025-09-25",
@@ -491,7 +491,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-reidhoffman-keyboard-2025-11",
@@ -520,7 +520,7 @@
     "confidence": "medium",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-lisadeng-2025-11-14",
@@ -549,7 +549,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-ph-raybould-2025-11-21",
@@ -578,7 +578,7 @@
     "confidence": "high",
     "wave": "wispr-ph-2024-09",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-wom-charlie-hills-li",
@@ -607,7 +607,7 @@
     "confidence": "medium",
     "wave": "wispr-wom",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-wom-codinginflow-li",
@@ -636,7 +636,7 @@
     "confidence": "high",
     "wave": "wispr-wom",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-wom-how-to-prompt-keyboard-li",
@@ -665,7 +665,7 @@
     "confidence": "high",
     "wave": "wispr-wom",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-wom-how-to-prompt-still-type-li",
@@ -694,7 +694,7 @@
     "confidence": "medium",
     "wave": "wispr-wom",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-wom-jonathan-li-li",
@@ -723,7 +723,7 @@
     "confidence": "high",
     "wave": "wispr-wom",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-wom-matt-rojas-li",
@@ -752,7 +752,7 @@
     "confidence": "high",
     "wave": "wispr-wom",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-wom-matthew-prime-li",
@@ -781,7 +781,7 @@
     "confidence": "high",
     "wave": "wispr-wom",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-wom-shrikant-b-li",
@@ -810,7 +810,7 @@
     "confidence": "high",
     "wave": "wispr-wom",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-026",
@@ -840,7 +840,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": true,
-    "attribution_note": "SoCap staff public post (Vedika). Attribution is the author, not a creator contract."
+    "attribution_note": "SoCap-associated author or SoCap URL; claim is presence/association, not a verified paid-creator contract."
   },
   {
     "id": "wf-android-allen-darnell-li-2026-02-23",
@@ -869,7 +869,7 @@
     "confidence": "high",
     "wave": "wispr-android-2026-02",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-android-blog-2026-02-23",
@@ -898,7 +898,7 @@
     "confidence": "high",
     "wave": "wispr-android-2026-02",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-android-rubenhassid-2026-02-23",
@@ -927,7 +927,7 @@
     "confidence": "high",
     "wave": "wispr-android-2026-02",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-android-socap-work-2026-02-23",
@@ -956,7 +956,68 @@
     "confidence": "high",
     "wave": "wispr-android-2026-02",
     "socap_claimed": true,
-    "attribution_note": "SoCap work/site page. Company-claimed case, not a creator rate."
+    "attribution_note": "SoCap-associated author or SoCap URL; claim is presence/association, not a verified paid-creator contract."
+  },
+  {
+    "id": "wf-android-swapnakpanda-2026-02-23",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2026-02-23",
+    "datetime_utc": "2026-02-23T18:14:09Z",
+    "asset_type": "post",
+    "platform": "x",
+    "author_handle": "@swapnakpanda",
+    "author_name": "Swapna Kumar Panda",
+    "author_type": "influencer",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "stunt",
+    "hook_text": "Wispr Flow is now on Android. And if you find a mistake, a Porsche 911 GT3 RS is yours.",
+    "posted_offset_hours": 1,
+    "metrics": {
+      "views": 2185,
+      "likes": 8,
+      "reposts": 0,
+      "comments": 3
+    },
+    "url": "https://x.com/swapnakpanda/status/2025997626064400851",
+    "source_note": "X API; quotes tankots Porsche post launch day.",
+    "confidence": "high",
+    "wave": "wispr-android-2026-02",
+    "socap_claimed": false,
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
+  },
+  {
+    "id": "wf-android-tankots-2026-02-23",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2026-02-23",
+    "datetime_utc": "2026-02-23T17:09:47Z",
+    "asset_type": "hero_video",
+    "platform": "x",
+    "author_handle": "tankots",
+    "author_name": "Tanay Kothari",
+    "author_type": "client_official",
+    "followers_approx": null,
+    "is_video": true,
+    "hook_type": "visual_stunt",
+    "hook_text": "We offered 5 people a Porsche 911 GT3 RS if they could get @WisprFlow to make a mistake",
+    "posted_offset_hours": 0,
+    "metrics": {
+      "views": null,
+      "likes": 10800,
+      "reposts": null,
+      "comments": 4500,
+      "replies": 4500,
+      "bookmarks": null
+    },
+    "url": "https://x.com/tankots/status/2025981424470479008",
+    "source_note": "Verified hero. Founder post, ~157s video, Android launch + Porsche stunt + giveaway. Candidate id 2025981424470479008 matches. | Metrics refreshed 2026-09-15 from SoCap embed HTML.",
+    "confidence": "high",
+    "wave": "wispr_flow_x",
+    "socap_claimed": true,
+    "attribution_note": "Hero metrics from PUBLIC SoCap embed on sociallcapital.com/work/wispr-flow (Like aria-label 10.8K; Read 4.5K replies). Views/reposts/bookmarks null — not on that page. Direct x.com fetch 403. Prior Arnav dump had views≈4.47M etc.; not used here (public-pages-only rule).",
+    "media_preview_url": "https://pbs.twimg.com/amplify_video_thumb/2025975637392207872/img/eTPK-PWkdG_uOiUe.jpg"
   },
   {
     "id": "wf-android-tankots-li-2026-02-23",
@@ -985,65 +1046,7 @@
     "confidence": "high",
     "wave": "wispr-android-2026-02",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
-  },
-  {
-    "id": "wf-android-vijay-bharadwaj-li-2026-02-23",
-    "launch_key": "wispr_flow",
-    "client": "Wispr Flow",
-    "date": "2026-02-23",
-    "datetime_utc": "2026-02-23T00:00:00Z",
-    "asset_type": "post",
-    "platform": "linkedin",
-    "author_handle": "@vjbharadwaj",
-    "author_name": "Vijay Bharadwaj",
-    "author_type": "influencer",
-    "followers_approx": null,
-    "is_video": false,
-    "hook_type": "announce",
-    "hook_text": "Public amplification of Wispr Flow Android launch framed as killing the keyboard for another ~2B users.",
-    "posted_offset_hours": null,
-    "metrics": {
-      "views": null,
-      "likes": null,
-      "reposts": null,
-      "comments": null
-    },
-    "url": "https://www.linkedin.com/posts/vjbharadwaj_killing-the-keyboard-for-another-2-billion-activity-7431754111655772160-ntUg",
-    "source_note": "Same-day Android wave beat. | evidence: https://www.linkedin.com/posts/vjbharadwaj_killing-the-keyboard-for-another-2-billion-activity-7431754111655772160-ntUg | wave=wispr-android-2026-02 title=LinkedIn: Wispr Flow live on Android",
-    "confidence": "high",
-    "wave": "wispr-android-2026-02",
-    "socap_claimed": true,
-    "attribution_note": "SoCap Head of Growth same-day LinkedIn amplification. Staff amp; not a creator contract or rate."
-  },
-  {
-    "id": "wf-android-wisprflow-li-2026-02-23",
-    "launch_key": "wispr_flow",
-    "client": "Wispr Flow",
-    "date": "2026-02-23",
-    "datetime_utc": "2026-02-23T00:00:00Z",
-    "asset_type": "post",
-    "platform": "linkedin",
-    "author_handle": "@wisprflow",
-    "author_name": "Wispr Flow",
-    "author_type": "official",
-    "followers_approx": null,
-    "is_video": false,
-    "hook_type": "stunt",
-    "hook_text": "We (Tanay) like to live on the edge… Android launch + Porsche challenge.",
-    "posted_offset_hours": null,
-    "metrics": {
-      "views": null,
-      "likes": null,
-      "reposts": null,
-      "comments": null
-    },
-    "url": "https://www.linkedin.com/posts/wisprflow_we-tanay-like-to-live-on-the-edgeclearly-activity-7431753849201352705-K8gm",
-    "source_note": "Public company LinkedIn amplify of Porsche/Android.",
-    "confidence": "high",
-    "wave": "wispr-android-2026-02",
-    "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-android-techcrunch-2026-02-23",
@@ -1072,39 +1075,65 @@
     "confidence": "high",
     "wave": "wispr-android-2026-02",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
-    "id": "wf-android-tankots-2026-02-23",
+    "id": "wf-android-vijay-bharadwaj-li-2026-02-23",
     "launch_key": "wispr_flow",
     "client": "Wispr Flow",
     "date": "2026-02-23",
-    "datetime_utc": "2026-02-23T17:09:47Z",
-    "asset_type": "hero_video",
-    "platform": "x",
-    "author_handle": "tankots",
-    "author_name": "Tanay Kothari",
-    "author_type": "client_official",
+    "datetime_utc": "2026-02-23T00:00:00Z",
+    "asset_type": "post",
+    "platform": "linkedin",
+    "author_handle": "@vjbharadwaj",
+    "author_name": "Vijay Bharadwaj",
+    "author_type": "influencer",
     "followers_approx": null,
-    "is_video": true,
-    "hook_type": "visual_stunt",
-    "hook_text": "We offered 5 people a Porsche 911 GT3 RS if they could get @WisprFlow to make a mistake",
-    "posted_offset_hours": 0,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "Public amplification of Wispr Flow Android launch framed as killing the keyboard for another ~2B users.",
+    "posted_offset_hours": null,
     "metrics": {
-      "views": 4470404,
-      "likes": 10780,
-      "reposts": 2875,
-      "comments": 4469,
-      "replies": 4469,
-      "bookmarks": 3131
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
     },
-    "url": "https://x.com/tankots/status/2025981424470479008",
-    "source_note": "Verified hero. Founder post, ~157s video, Android launch + Porsche stunt + giveaway. Metrics from Arnav logged-in X dump (views ~4.47M). SoCap work-page embed shows 10.8K likes / 4.5K replies (views not on embed). Poster: pbs amplify_video_thumb.",
+    "url": "https://www.linkedin.com/posts/vjbharadwaj_killing-the-keyboard-for-another-2-billion-activity-7431754111655772160-ntUg",
+    "source_note": "Same-day Android wave beat. | evidence: https://www.linkedin.com/posts/vjbharadwaj_killing-the-keyboard-for-another-2-billion-activity-7431754111655772160-ntUg | wave=wispr-android-2026-02 title=LinkedIn: Wispr Flow live on Android",
     "confidence": "high",
-    "wave": "wispr_flow_x",
-    "socap_claimed": true,
-    "attribution_note": "SoCap claimed this founder post via @socapinc QT (2026268845347164322). Founder-authored, not SoCap-authored.",
-    "media_preview_url": "https://pbs.twimg.com/amplify_video_thumb/2025975637392207872/img/eTPK-PWkdG_uOiUe.jpg"
+    "wave": "wispr-android-2026-02",
+    "socap_claimed": false,
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
+  },
+  {
+    "id": "wf-android-wisprflow-li-2026-02-23",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2026-02-23",
+    "datetime_utc": "2026-02-23T00:00:00Z",
+    "asset_type": "post",
+    "platform": "linkedin",
+    "author_handle": "@wisprflow",
+    "author_name": "Wispr Flow",
+    "author_type": "official",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "stunt",
+    "hook_text": "We (Tanay) like to live on the edge… Android launch + Porsche challenge.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://www.linkedin.com/posts/wisprflow_we-tanay-like-to-live-on-the-edgeclearly-activity-7431753849201352705-K8gm",
+    "source_note": "Public company LinkedIn amplify of Porsche/Android.",
+    "confidence": "high",
+    "wave": "wispr-android-2026-02",
+    "socap_claimed": false,
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-002",
@@ -1134,7 +1163,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-003",
@@ -1164,7 +1193,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-004",
@@ -1194,7 +1223,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": true,
-    "attribution_note": "SoCap staff public post (Vedika). Attribution is the author, not a creator contract."
+    "attribution_note": "SoCap-associated author or SoCap URL; claim is presence/association, not a verified paid-creator contract."
   },
   {
     "id": "x-wf-005",
@@ -1224,36 +1253,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
-  },
-  {
-    "id": "wf-android-swapnakpanda-2026-02-23",
-    "launch_key": "wispr_flow",
-    "client": "Wispr Flow",
-    "date": "2026-02-23",
-    "datetime_utc": "2026-02-23T18:14:09Z",
-    "asset_type": "post",
-    "platform": "x",
-    "author_handle": "@swapnakpanda",
-    "author_name": "Swapna Kumar Panda",
-    "author_type": "influencer",
-    "followers_approx": null,
-    "is_video": false,
-    "hook_type": "stunt",
-    "hook_text": "Wispr Flow is now on Android. And if you find a mistake, a Porsche 911 GT3 RS is yours.",
-    "posted_offset_hours": 1,
-    "metrics": {
-      "views": 2185,
-      "likes": 8,
-      "reposts": 0,
-      "comments": 3
-    },
-    "url": "https://x.com/swapnakpanda/status/2025997626064400851",
-    "source_note": "X API; quotes tankots Porsche post launch day.",
-    "confidence": "high",
-    "wave": "wispr-android-2026-02",
-    "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-006",
@@ -1283,7 +1283,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-007",
@@ -1313,7 +1313,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": true,
-    "attribution_note": "SoCap official account. Public claim on this URL (Wispr: quote-tweet of the founder hero)."
+    "attribution_note": "SoCap-associated author or SoCap URL; claim is presence/association, not a verified paid-creator contract."
   },
   {
     "id": "x-wf-008",
@@ -1343,7 +1343,7 @@
     "confidence": "medium",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-009",
@@ -1373,7 +1373,7 @@
     "confidence": "medium",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-010",
@@ -1403,7 +1403,7 @@
     "confidence": "medium",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-011",
@@ -1433,7 +1433,7 @@
     "confidence": "low",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-012",
@@ -1463,7 +1463,7 @@
     "confidence": "medium",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-013",
@@ -1493,7 +1493,7 @@
     "confidence": "medium",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-014",
@@ -1523,7 +1523,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-015",
@@ -1553,7 +1553,7 @@
     "confidence": "medium",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-016",
@@ -1583,7 +1583,7 @@
     "confidence": "medium",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-017",
@@ -1613,37 +1613,7 @@
     "confidence": "medium",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
-  },
-  {
-    "id": "x-wf-019",
-    "launch_key": "wispr_flow",
-    "client": "Wispr Flow",
-    "date": "2026-02-24",
-    "datetime_utc": "2026-02-24T21:49:34Z",
-    "asset_type": "quote",
-    "platform": "x",
-    "author_handle": "not_so_shant",
-    "author_name": "Nishant",
-    "author_type": "unknown",
-    "followers_approx": null,
-    "is_video": false,
-    "hook_type": "other",
-    "hook_text": "We need more product launch videos like this.",
-    "posted_offset_hours": 28.66,
-    "metrics": {
-      "views": 88,
-      "likes": 1,
-      "replies": 0,
-      "reposts": 0,
-      "bookmarks": 0
-    },
-    "url": "https://x.com/not_so_shant/status/2026414223845183611",
-    "source_note": "Organic-looking quote of the hero about the film itself. Low reach. Included as contrast to high-reach founder-lore posts.",
-    "confidence": "high",
-    "wave": "wispr_flow_x",
-    "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-018",
@@ -1673,7 +1643,37 @@
     "confidence": "medium",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
+  },
+  {
+    "id": "x-wf-019",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2026-02-24",
+    "datetime_utc": "2026-02-24T21:49:34Z",
+    "asset_type": "quote",
+    "platform": "x",
+    "author_handle": "not_so_shant",
+    "author_name": "Nishant",
+    "author_type": "unknown",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "other",
+    "hook_text": "We need more product launch videos like this.",
+    "posted_offset_hours": 28.66,
+    "metrics": {
+      "views": 88,
+      "likes": 1,
+      "replies": 0,
+      "reposts": 0,
+      "bookmarks": 0
+    },
+    "url": "https://x.com/not_so_shant/status/2026414223845183611",
+    "source_note": "Organic-looking quote of the hero about the film itself. Low reach. Included as contrast to high-reach founder-lore posts.",
+    "confidence": "high",
+    "wave": "wispr_flow_x",
+    "socap_claimed": false,
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-020",
@@ -1703,7 +1703,7 @@
     "confidence": "medium",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-021",
@@ -1733,7 +1733,7 @@
     "confidence": "low",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-022",
@@ -1763,7 +1763,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-023",
@@ -1793,7 +1793,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-024",
@@ -1823,7 +1823,36 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": true,
-    "attribution_note": "SoCap staff public post (Vedika). Attribution is the author, not a creator contract."
+    "attribution_note": "SoCap-associated author or SoCap URL; claim is presence/association, not a verified paid-creator contract."
+  },
+  {
+    "id": "wf-android-linusekenstam-2026-02-27",
+    "launch_key": "wispr_flow",
+    "client": "Wispr Flow",
+    "date": "2026-02-27",
+    "datetime_utc": "2026-02-27T18:38:24Z",
+    "asset_type": "video",
+    "platform": "x",
+    "author_handle": "@LinusEkenstam",
+    "author_name": "Linus Ekenstam",
+    "author_type": "influencer",
+    "followers_approx": null,
+    "is_video": true,
+    "hook_type": "stunt",
+    "hook_text": "Wispr Flow niched down on dictation… And now, they're giving a Porsche to anyone who can beat the fastest speaker.",
+    "posted_offset_hours": 97,
+    "metrics": {
+      "views": 11148,
+      "likes": 30,
+      "reposts": 2,
+      "comments": 5
+    },
+    "url": "https://x.com/LinusEkenstam/status/2027453277109895276",
+    "source_note": "X API; influencer video on Android/Porsche wave.",
+    "confidence": "high",
+    "wave": "wispr-android-2026-02",
+    "socap_claimed": false,
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-025",
@@ -1853,36 +1882,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": true,
-    "attribution_note": "SoCap staff public post (Vedika). Attribution is the author, not a creator contract."
-  },
-  {
-    "id": "wf-android-linusekenstam-2026-02-27",
-    "launch_key": "wispr_flow",
-    "client": "Wispr Flow",
-    "date": "2026-02-27",
-    "datetime_utc": "2026-02-27T18:38:24Z",
-    "asset_type": "video",
-    "platform": "x",
-    "author_handle": "@LinusEkenstam",
-    "author_name": "Linus Ekenstam",
-    "author_type": "influencer",
-    "followers_approx": null,
-    "is_video": true,
-    "hook_type": "stunt",
-    "hook_text": "Wispr Flow niched down on dictation… And now, they're giving a Porsche to anyone who can beat the fastest speaker.",
-    "posted_offset_hours": 97,
-    "metrics": {
-      "views": 11148,
-      "likes": 30,
-      "reposts": 2,
-      "comments": 5
-    },
-    "url": "https://x.com/LinusEkenstam/status/2027453277109895276",
-    "source_note": "X API; influencer video on Android/Porsche wave.",
-    "confidence": "high",
-    "wave": "wispr-android-2026-02",
-    "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "SoCap-associated author or SoCap URL; claim is presence/association, not a verified paid-creator contract."
   },
   {
     "id": "wf-android-kalashnikovapv-2026-04-30",
@@ -1911,7 +1911,7 @@
     "confidence": "high",
     "wave": "wispr-android-2026-02",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "x-wf-028",
@@ -1941,7 +1941,7 @@
     "confidence": "high",
     "wave": "wispr_flow_x",
     "socap_claimed": true,
-    "attribution_note": "SoCap staff public post (Vedika). Attribution is the author, not a creator contract."
+    "attribution_note": "SoCap-associated author or SoCap URL; claim is presence/association, not a verified paid-creator contract."
   },
   {
     "id": "wf-android-lukewilson-2026-06-25",
@@ -1970,7 +1970,7 @@
     "confidence": "medium",
     "wave": "wispr-android-2026-02",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-android-heathercarnes-2026-06-30",
@@ -1999,7 +1999,7 @@
     "confidence": "medium",
     "wave": "wispr-android-2026-02",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
     "id": "wf-android-rahulmathur-2026-08-24",
@@ -2028,55 +2028,23 @@
     "confidence": "high",
     "wave": "wispr-android-2026-02",
     "socap_claimed": false,
-    "attribution_note": "No public SoCap tag or official claim on this URL."
+    "attribution_note": "No SoCap claim encoded; public post without verified SoCap contract."
   },
   {
-    "id": "pa-x-polyaivoice-2023789465509015972",
+    "id": "poly-li-ef-seriesd-2025-12",
     "launch_key": "poly_ai",
-    "client": "PolyAI",
-    "date": "2026-02-17",
-    "datetime_utc": "2026-02-17T15:59:43.424Z",
-    "asset_type": "hero_video",
-    "platform": "x",
-    "author_handle": "polyaivoice",
-    "author_name": "PolyAI",
-    "author_type": "client_official",
-    "followers_approx": null,
-    "is_video": true,
-    "hook_type": "visual_stunt",
-    "hook_text": "PolyAI has raised $200M from Nvidia, Khosla Ventures, and multiple top VCs. We're one of the fastest-growing companies in the UK…",
-    "posted_offset_hours": 0,
-    "metrics": {
-      "views": null,
-      "likes": 4828,
-      "replies": 1500,
-      "comments": 1500,
-      "reposts": null,
-      "bookmarks": null
-    },
-    "url": "https://x.com/polyaivoice/status/2023789465509015972",
-    "source_note": "Snowflake UTC 2026-02-17T15:59:43.424Z. favorite_count 4828 and conversation_count 1500 from the public react-tweet embed on sociallcapital.com/work/poly-ai (also shown as 4.8K likes / Read 1.5K replies). Views not exposed on the embed → null. Video poster stored as media_preview_url. Not a reconstructed creator wave.",
-    "confidence": "high",
-    "wave": null,
-    "socap_claimed": true,
-    "attribution_note": "Embedded as the hero on SoCap work/poly-ai. Client-authored post; SoCap-claimed via the work page.",
-    "media_preview_url": "https://pbs.twimg.com/amplify_video_thumb/2023781188654022658/img/fP2-hA1kW0HMjrCc.jpg"
-  },
-  {
-    "id": "pa-web-socap-work",
-    "launch_key": "poly_ai",
-    "client": "PolyAI",
-    "date": "2026-02-17",
-    "datetime_utc": "2026-02-17T00:00:00Z",
-    "asset_type": "case_page",
-    "platform": "web",
-    "author_handle": "@sociallcapital",
-    "author_name": "Social Capital Inc",
-    "author_type": "official",
+    "client": "Poly AI",
+    "date": "2025-12-15",
+    "datetime_utc": "2025-12-15T00:00:00Z",
+    "asset_type": "post",
+    "platform": "linkedin",
+    "author_handle": "entrepreneurs-first",
+    "author_name": "Entrepreneurs First",
+    "author_type": "influencer",
     "followers_approx": null,
     "is_video": false,
-    "hook_type": "case",
-    "hook_text": "SoCap work case: Poly AI (hero X embed on page, dated Feb 2026)",
+    "hook_type": "announce",
+    "hook_text": "EF LinkedIn: PolyAI $86M Series D; early backer note; links Forbes.",
     "posted_offset_hours": null,
     "metrics": {
       "views": null,
@@ -2084,28 +2052,115 @@
       "reposts": null,
       "comments": null
     },
-    "url": "https://www.sociallcapital.com/work/poly-ai",
-    "source_note": "Public SoCap work page (heading month: Feb 2026). Embeds the PolyAI X hero. Calendar day aligned to the embedded tweet, not a verified page-publish timestamp. Creator-wave for Poly is not reconstructed — see data/poly-reject.md.",
+    "url": "https://www.linkedin.com/posts/entrepreneurs-first_polyai-has-raised-an-86m-series-d-co-led-activity-7406372092423610368-nKSa",
+    "source_note": "Public EF post.",
     "confidence": "high",
-    "wave": null,
-    "socap_claimed": true,
-    "attribution_note": "SoCap work case page for Poly AI."
+    "wave": "poly-ai-series-d-2025-12",
+    "socap_claimed": false,
+    "attribution_note": "Investor/community amplification; no SoCap claim."
   },
   {
-    "id": "pa-web-polyai-blog-gordon-ramsay",
+    "id": "poly-li-georgian-seriesd-2025-12-15",
     "launch_key": "poly_ai",
-    "client": "PolyAI",
-    "date": "2026-02-09",
-    "datetime_utc": "2026-02-09T00:00:00Z",
-    "asset_type": "article",
-    "platform": "web",
-    "author_handle": "poly.ai",
+    "client": "Poly AI",
+    "date": "2025-12-15",
+    "datetime_utc": "2025-12-15T00:00:00Z",
+    "asset_type": "post",
+    "platform": "linkedin",
+    "author_handle": "georgian",
+    "author_name": "Georgian",
+    "author_type": "influencer",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "Investor LinkedIn: Georgian co-led PolyAI $86M Series D with Khosla and Hedosophia; NVIDIA nVentures participated.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://www.linkedin.com/posts/georgian_were-pleased-to-announce-that-georgian-has-activity-7406372523954597888-7q33",
+    "source_note": "Public Georgian firm post amplifying Series D.",
+    "confidence": "high",
+    "wave": "poly-ai-series-d-2025-12",
+    "socap_claimed": false,
+    "attribution_note": "VC amplification; not a SoCap creator-wave beat."
+  },
+  {
+    "id": "poly-li-polyai-seriesd-2025-12",
+    "launch_key": "poly_ai",
+    "client": "Poly AI",
+    "date": "2025-12-15",
+    "datetime_utc": "2025-12-15T00:00:00Z",
+    "asset_type": "post",
+    "platform": "linkedin",
+    "author_handle": "polyai",
     "author_name": "PolyAI",
     "author_type": "client_official",
     "followers_approx": null,
     "is_video": false,
     "hook_type": "announce",
-    "hook_text": "Gordon Ramsay applies his no-nonsense standards to customer service in PolyAI campaign",
+    "hook_text": "Company LinkedIn: Series D brings total funding over $200M; points to CEO story.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://www.linkedin.com/posts/polyai_with-our-series-d-weve-now-raised-over-activity-7406395364104380416-cqdE",
+    "source_note": "Public PolyAI company LinkedIn post.",
+    "confidence": "high",
+    "wave": "poly-ai-series-d-2025-12",
+    "socap_claimed": false,
+    "attribution_note": "Company raise post; SoCap /work features a later Feb 2026 X announce, not this LI post."
+  },
+  {
+    "id": "poly-li-nikola-gordon-standards-2026-02-07",
+    "launch_key": "poly_ai",
+    "client": "Poly AI",
+    "date": "2026-02-07",
+    "datetime_utc": "2026-02-07T00:00:00Z",
+    "asset_type": "post",
+    "platform": "linkedin",
+    "author_handle": "nikola-mrksic",
+    "author_name": "Nikola Mrkšić",
+    "author_type": "founder",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "Founder LinkedIn: Gordon Ramsay embodies PolyAI standards; restaurants use PolyAI.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://www.linkedin.com/posts/nikola-mrksic_gordon-ramsay-embodies-the-standards-we-hold-activity-7426041424422322176-YHvj",
+    "source_note": "Public LinkedIn post URL + search snippet. Metrics not visible via fetch.",
+    "confidence": "high",
+    "wave": "poly-ai-2026-02",
+    "socap_claimed": false,
+    "attribution_note": "Founder post; no SoCap credit."
+  },
+  {
+    "id": "poly-blog-gordon-ramsay-2026-02-09",
+    "launch_key": "poly_ai",
+    "client": "Poly AI",
+    "date": "2026-02-09",
+    "datetime_utc": "2026-02-09T00:00:00Z",
+    "asset_type": "article",
+    "platform": "web",
+    "author_handle": "polyai",
+    "author_name": "Mike Tague / PolyAI",
+    "author_type": "client_official",
+    "followers_approx": null,
+    "is_video": true,
+    "hook_type": "stunt",
+    "hook_text": "Official PolyAI blog: Gordon Ramsay brand campaign for voice agents vs legacy phone menus.",
     "posted_offset_hours": null,
     "metrics": {
       "views": null,
@@ -2114,10 +2169,215 @@
       "comments": null
     },
     "url": "https://poly.ai/blog/gordon-ramsay-applies-his-no-nonsense-standards-to-customer-service-in-polyai-campaign",
-    "source_note": "Client blog by Mike Tague, 9 Feb 2026. Not SoCap-authored. Time-of-day not on the page → datetime is calendar-day. Offset vs T-0 hero left null (do not invent hours).",
+    "source_note": "Fetched poly.ai blog 2026-02-09. No public view count on page.",
     "confidence": "high",
-    "wave": null,
+    "wave": "poly-ai-2026-02",
     "socap_claimed": false,
-    "attribution_note": "Client-authored campaign post. No SoCap byline on this URL."
+    "attribution_note": "Company-owned campaign page; no SoCap credit on page. SoCap claim only via separate /work case."
+  },
+  {
+    "id": "poly-designrush-gordon-2026-02",
+    "launch_key": "poly_ai",
+    "client": "Poly AI",
+    "date": "2026-02-09",
+    "datetime_utc": "2026-02-09T00:00:00Z",
+    "asset_type": "article",
+    "platform": "web",
+    "author_handle": "designrush",
+    "author_name": "DesignRush",
+    "author_type": "press",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "DesignRush write-up: PolyAI taps Gordon Ramsay to slam broken phone systems.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://news.designrush.com/gordon-ramsay-polyai-customer-service-ai-campaign",
+    "source_note": "Public DesignRush news page.",
+    "confidence": "medium",
+    "wave": "poly-ai-2026-02",
+    "socap_claimed": false,
+    "attribution_note": "Secondary press; no SoCap claim."
+  },
+  {
+    "id": "poly-lbb-gordon-2026-02",
+    "launch_key": "poly_ai",
+    "client": "Poly AI",
+    "date": "2026-02-09",
+    "datetime_utc": "2026-02-09T00:00:00Z",
+    "asset_type": "article",
+    "platform": "web",
+    "author_handle": "lbbonline",
+    "author_name": "LBBOnline",
+    "author_type": "press",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "Trade press on Gordon Ramsay × PolyAI campaign calling out customer service that doesn’t listen.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://lbbonline.com/news/Gordon-Ramsey-PolyAI",
+    "source_note": "Public LBBOnline coverage of the Ramsay campaign.",
+    "confidence": "high",
+    "wave": "poly-ai-2026-02",
+    "socap_claimed": false,
+    "attribution_note": "Press; no SoCap attribution on page."
+  },
+  {
+    "id": "poly-li-nikola-superbowl-2026-02-09",
+    "launch_key": "poly_ai",
+    "client": "Poly AI",
+    "date": "2026-02-09",
+    "datetime_utc": "2026-02-09T00:00:00Z",
+    "asset_type": "post",
+    "platform": "linkedin",
+    "author_handle": "nikola-mrksic",
+    "author_name": "Nikola Mrkšić",
+    "author_type": "founder",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "story",
+    "hook_text": "Founder LinkedIn: Super Bowl ad with Gordon Ramsay; restaurants client 2+ years; Ramsay on cap table.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://www.linkedin.com/posts/nikola-mrksic_call-me-crazy-but-i-always-found-gordon-activity-7426710114528681985-kdDJ",
+    "source_note": "Public LinkedIn; search snippet notes ~848 reactions — not copied into metrics (not verified as likes field).",
+    "confidence": "high",
+    "wave": "poly-ai-2026-02",
+    "socap_claimed": false,
+    "attribution_note": "Founder campaign post; celebrity partnership ≠ SoCap influencer wave."
+  },
+  {
+    "id": "poly-prnewswire-gordon-2026-02-09",
+    "launch_key": "poly_ai",
+    "client": "Poly AI",
+    "date": "2026-02-09",
+    "datetime_utc": "2026-02-09T00:00:00Z",
+    "asset_type": "article",
+    "platform": "web",
+    "author_handle": "prnewswire",
+    "author_name": "PR Newswire / PolyAI",
+    "author_type": "press",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "PR wire: Gordon Ramsay as face of PolyAI brand campaign; global video/digital/OOH rollout.",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://www.prnewswire.com/news-releases/gordon-ramsay-applies-his-no-nonsense-standards-to-customer-service-in-polyai-campaign-302682167.html",
+    "source_note": "Public PR Newswire release dated Feb 9, 2026.",
+    "confidence": "high",
+    "wave": "poly-ai-2026-02",
+    "socap_claimed": false,
+    "attribution_note": "Press wire; no SoCap mention observed."
+  },
+  {
+    "id": "poly-li-brian-day-200m-2026-02-17",
+    "launch_key": "poly_ai",
+    "client": "Poly AI",
+    "date": "2026-02-17",
+    "datetime_utc": "2026-02-17T00:00:00Z",
+    "asset_type": "post",
+    "platform": "linkedin",
+    "author_handle": "briandaydp",
+    "author_name": "Brian Day",
+    "author_type": "creator",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "Creator LinkedIn reshare: PolyAI surpassed $200M total funding incl. NVentures.",
+    "posted_offset_hours": 0,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://www.linkedin.com/posts/briandaydp_conversationalai-customerexperience-activity-7429557140484423680-joYB",
+    "source_note": "Public LinkedIn; same-day as SoCap-featured X announce cluster.",
+    "confidence": "medium",
+    "wave": "poly-ai-2026-02",
+    "socap_claimed": false,
+    "attribution_note": "Organic/creator reshare of company raise; no evidence this post was SoCap-ghostwritten."
+  },
+  {
+    "id": "poly-socap-work-2026-02",
+    "launch_key": "poly_ai",
+    "client": "Poly AI",
+    "date": "2026-02-17",
+    "datetime_utc": "2026-02-17T15:59:00Z",
+    "asset_type": "case_page",
+    "platform": "web",
+    "author_handle": "sociallcapital",
+    "author_name": "Social Capital Inc",
+    "author_type": "socap_official",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "SoCap work case featuring PolyAI’s public raise post (@polyaivoice).",
+    "posted_offset_hours": null,
+    "metrics": {
+      "views": null,
+      "likes": null,
+      "reposts": null,
+      "comments": null
+    },
+    "url": "https://www.sociallcapital.com/work/poly-ai",
+    "source_note": "Official SoCap /work case for Poly AI (Feb 2026). Embeds X status 2023789465509015972.",
+    "confidence": "high",
+    "wave": "poly-ai-2026-02",
+    "socap_claimed": true,
+    "attribution_note": "SoCap lists Poly AI on /work; claim is company case page, not a creator contract."
+  },
+  {
+    "id": "poly-x-polyaivoice-2026-02-17",
+    "launch_key": "poly_ai",
+    "client": "Poly AI",
+    "date": "2026-02-17",
+    "datetime_utc": "2026-02-17T15:59:00Z",
+    "asset_type": "post",
+    "platform": "x",
+    "author_handle": "polyaivoice",
+    "author_name": "PolyAI",
+    "author_type": "client_official",
+    "followers_approx": null,
+    "is_video": false,
+    "hook_type": "announce",
+    "hook_text": "PolyAI has raised $200M from Nvidia, Khosla Ventures, and multiple top VCs; cites Marriott, PG&E, Gordon Ramsay deployments.",
+    "posted_offset_hours": 0,
+    "metrics": {
+      "views": null,
+      "likes": 4800,
+      "reposts": null,
+      "comments": 1500,
+      "replies": 1500
+    },
+    "url": "https://x.com/polyaivoice/status/2023789465509015972",
+    "source_note": "Primary company X URL. Metrics read from SoCap embed aria-labels (4.8K likes, Read 1.5K replies). Direct x.com fetch 403.",
+    "confidence": "high",
+    "wave": "poly-ai-2026-02",
+    "socap_claimed": true,
+    "attribution_note": "Featured on sociallcapital.com/work/poly-ai; likes/replies from that public embed, not invented.",
+    "media_preview_url": "https://pbs.twimg.com/amplify_video_thumb/2023781188654022658/img/fP2-hA1kW0HMjrCc.jpg"
   }
 ]

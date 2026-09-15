@@ -1,13 +1,19 @@
 # Sources
 
 ## In launches.json
+- https://lbbonline.com/news/Gordon-Ramsey-PolyAI
+- https://news.designrush.com/gordon-ramsay-polyai-customer-service-ai-campaign
+- https://poly.ai/blog/gordon-ramsay-applies-his-no-nonsense-standards-to-customer-service-in-polyai-campaign
 - https://techcrunch.com/2026/02/23/wispr-flow-launches-an-android-app-for-ai-powered-dictation/
 - https://wisprflow.ai/post/flow-on-android
 - https://www.consumerstartups.com/p/wispr-flow-kill-the-keyboard
 - https://www.linkedin.com/posts/12lijonathan_i-recently-started-using-wispr-flow-a-speech-to-text-activity-7475534196019601408-mPGw
 - https://www.linkedin.com/posts/allendarnell_ive-been-using-wispr-flow-for-41-weeks-activity-7431752233836355584-dLkb
+- https://www.linkedin.com/posts/briandaydp_conversationalai-customerexperience-activity-7429557140484423680-joYB
 - https://www.linkedin.com/posts/charlie-hills_wisprflowpartner-activity-7421869624989741056-vi90
 - https://www.linkedin.com/posts/codinginflow_wispr-flow-effortless-voice-dictation-activity-7445473771915886592-tzma
+- https://www.linkedin.com/posts/entrepreneurs-first_polyai-has-raised-an-86m-series-d-co-led-activity-7406372092423610368-nKSa
+- https://www.linkedin.com/posts/georgian_were-pleased-to-announce-that-georgian-has-activity-7406372523954597888-7q33
 - https://www.linkedin.com/posts/heathercarnes_i-found-a-hack-yall-i-love-it-so-much-activity-7477839837186842624-bCi0
 - https://www.linkedin.com/posts/how-to-prompt_activity-7421797954602041344-jAyz
 - https://www.linkedin.com/posts/how-to-prompt_wispr-why-your-keyboard-is-the-real-bottleneck-activity-7429087001544622080-a0OE
@@ -17,6 +23,9 @@
 - https://www.linkedin.com/posts/lukejwilson88_ive-tried-a-few-different-dictation-tools-activity-7475838528074018816-Xtmf
 - https://www.linkedin.com/posts/matt-rojas_i-dont-type-anymore-its-crazy-i-use-wispr-activity-7493016364526301185--j_F
 - https://www.linkedin.com/posts/matthewprime_im-about-a-week-into-using-wispr-flow-daily-activity-7425538800837279744-W3Of
+- https://www.linkedin.com/posts/nikola-mrksic_call-me-crazy-but-i-always-found-gordon-activity-7426710114528681985-kdDJ
+- https://www.linkedin.com/posts/nikola-mrksic_gordon-ramsay-embodies-the-standards-we-hold-activity-7426041424422322176-YHvj
+- https://www.linkedin.com/posts/polyai_with-our-series-d-weve-now-raised-over-activity-7406395364104380416-cqdE
 - https://www.linkedin.com/posts/raybould_wispr-flow-is-in-my-pantheon-of-favourite-activity-7397692157785980928-40BQ
 - https://www.linkedin.com/posts/reidhoffman_i-am-voicepilled-a-major-step-forward-in-activity-7373713536096780289-lUb7
 - https://www.linkedin.com/posts/reidhoffman_what-if-we-got-rid-of-the-keyboard-activity-7402026243107303424-hlu7
@@ -28,29 +37,56 @@
 - https://www.linkedin.com/posts/tankots_we-offered-5-people-a-porsche-911-gt3-rs-activity-7431748842519318528-RY-e
 - https://www.linkedin.com/posts/vjbharadwaj_killing-the-keyboard-for-another-2-billion-activity-7431754111655772160-ntUg
 - https://www.linkedin.com/posts/wisprflow_we-tanay-like-to-live-on-the-edgeclearly-activity-7431753849201352705-K8gm
+- https://www.prnewswire.com/news-releases/gordon-ramsay-applies-his-no-nonsense-standards-to-customer-service-in-polyai-campaign-302682167.html
 - https://www.producthunt.com/products/wisprflow
+- https://www.sociallcapital.com/work/poly-ai
 - https://www.sociallcapital.com/work/wispr-flow
-- https://x.com/DutchMartin/status/1840659609486307586
-- https://x.com/HeyNayeem/status/1840775837890773296
-- https://x.com/KrishRShah/status/1840794657816469965
-- https://x.com/LinusEkenstam/status/2027453277109895276
-- https://x.com/Rahul_J_Mathur/status/2091748242673508651
-- https://x.com/SahajGarg6/status/1840759592353226960
-- https://x.com/WisprFlow/status/1840757312912564366
 - https://x.com/a_patil/status/1840860603432517679
+- https://x.com/aastha_mhaske/status/2026298282511901041
+- https://x.com/adxtyahq/status/2026317164383531322
+- https://x.com/amritwt/status/2026308469599666331
+- https://x.com/beffjezos/status/2026368675431739510
+- https://x.com/DutchMartin/status/1840659609486307586
+- https://x.com/FractalObserver/status/2026800477401477195
+- https://x.com/Hesamation/status/2026739173453856863
+- https://x.com/HeyNayeem/status/1840775837890773296
+- https://x.com/heyrobinai/status/2026334649522520482
+- https://x.com/JaynitMakwana/status/2026571998630129801
 - https://x.com/kalashnikovapv/status/2049880959563051169
+- https://x.com/kanavtwt/status/2026370364776001628
+- https://x.com/KrishRShah/status/1840794657816469965
+- https://x.com/kritarthmittal/status/2026314768408338595
+- https://x.com/LinusEkenstam/status/2027453277109895276
+- https://x.com/Meer_AIIT/status/2026316707934151148
 - https://x.com/nabeelqu/status/1841660296290590898
+- https://x.com/not_so_shant/status/2026414223845183611
+- https://x.com/Parul_Gautam7/status/2026576686096200022
+- https://x.com/polyaivoice/status/2023789465509015972
+- https://x.com/Rahul_J_Mathur/status/2091748242673508651
+- https://x.com/rohanpaul_ai/status/2026414859173437875
+- https://x.com/SahajGarg6/status/1840759592353226960
+- https://x.com/socapinc/status/2026268845347164322
 - https://x.com/swapnakpanda/status/2025997626064400851
 - https://x.com/tankots/status/2025981424470479008
+- https://x.com/tankots/status/2025981429142994963
+- https://x.com/tankots/status/2025981433832247406
 - https://x.com/techczech/status/1840874909834080493
-- https://x.com/polyaivoice/status/2023789465509015972
-- https://www.sociallcapital.com/work/poly-ai
-- https://poly.ai/blog/gordon-ramsay-applies-his-no-nonsense-standards-to-customer-service-in-polyai-campaign
+- https://x.com/umzrs/status/2026377650097336424
+- https://x.com/VedikaBhaia/status/1970080319383720300
+- https://x.com/VedikaBhaia/status/2024462413085687845
+- https://x.com/VedikaBhaia/status/2025983122907795858
+- https://x.com/VedikaBhaia/status/2026983856705081830
+- https://x.com/VedikaBhaia/status/2027276009679294951
+- https://x.com/VedikaBhaia/status/2053903388212085174
+- https://x.com/WisprFlow/status/1840757312912564366
+- https://x.com/WisprFlow/status/2025987216192012552
+- https://x.com/WisprFlow/status/2026034462749028757
+- https://x.com/WisprFlow/status/2026341353140138183
 
 
 ## 2026-09-15 — Arnav X-wave dump
 - Source: Arnav via logged-in X agent; file `data/x-wave-arnav.json` (29 rows, x-wf-001..029).
-- Hero: https://x.com/tankots/status/2025981424470479008 (~4.47M views).
+- Hero: https://x.com/tankots/status/2025981424470479008 — ledger metrics are **SoCap work-page embed only** (10.8K likes / 4.5K replies; views/reposts/bookmarks null). Prior dump views (~4.47M) are not used on this row.
 - Strong attribution: @socapinc quote + VedikaBhaia hiring/process posts.
-- Poly AI: Vedika hiring post claims Poly; ledger now has public hero + work page + client blog. Creator-wave for Poly is **not** reconstructed (`data/poly-reject.md`).
+- Poly AI: 12 public rows in `data/launches.json` and `data/poly-contrast.json`. Creator-wave for Poly is **not** reconstructed (`data/poly-reject.md`).
 - Merge: dedupe by URL into `launches.json`; do not invent SoCap contracts for medium/low creator rows.

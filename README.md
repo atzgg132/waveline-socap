@@ -45,14 +45,14 @@ Counted no-key APIs: `publish.x.com/oembed`, `api.fxtwitter.com`, `api.microlink
 
 Docs: [`harness/README.md`](harness/README.md). Sample output: [`harness/fixtures/sample-run.json`](harness/fixtures/sample-run.json).
 
-This VM often has **no live X bearer**. Code + fixtures ship so a reviewer with keys can run `--apply`. Unauthenticated dry-run still hits ≥2 APIs (oEmbed, Open Graph, Product Hunt HTML).
+This VM often has **no live X bearer**. Code + fixtures ship so a reviewer with keys can run `--apply`. Unauthenticated dry-run still hits ≥2 **counted** APIs (`publish.x.com/oembed`, `api.fxtwitter.com`, `api.microlink.io`). HTML scrape does not count.
 
 ## Data
 
-Source of truth: [`data/launches.json`](data/launches.json) (72 rows). Do not invent rows.
+Source of truth: [`data/launches.json`](data/launches.json) (**81** rows). Do not invent rows.
 
 - 69 Wispr Flow rows (X-wave depth from `data/x-wave-arnav.json`)
-- 3 Poly AI rows: client hero, SoCap work page, client blog — see [`data/poly-reject.md`](data/poly-reject.md) for what was **not** reconstructed
+- 12 Poly AI rows (also copied at [`data/poly-contrast.json`](data/poly-contrast.json)) — see [`data/poly-reject.md`](data/poly-reject.md) for what was **not** reconstructed
 
 Also in-repo:
 
@@ -89,7 +89,8 @@ Full text: `INSIGHT.md`.
 
 ## Known gaps
 
-- Wispr X wave is reconstructed. Poly is **not** a creator-wave reconstruction (hero + work page + blog only).
+- Wispr X wave is reconstructed. Poly is **not** a creator-wave reconstruction (12 public case/campaign/press/LinkedIn rows).
+- Wispr hero metrics on the ledger are **SoCap work-page embed only** (10.8K likes / 4.5K replies). Views/reposts/bookmarks stay null.
 - Medium/low creator rows are launch-adjacent; unpaid vs contracted is unproven unless `socap_claimed` is true.
 - `followers_approx` is often null — cannot test follower-rank order from this file alone.
 - No YouTube URLs in JSON; oEmbed is wired and stays quiet until a row has a YouTube URL.
