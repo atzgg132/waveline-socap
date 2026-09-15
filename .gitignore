@@ -1,0 +1,27 @@
+# dependencies
+node_modules
+
+# build
+dist
+dist-ssr
+*.local
+
+# logs
+logs
+*.log
+npm-debug.log*
+
+# editor / os
+.DS_Store
+.idea
+.vscode/*
+!.vscode/extensions.json
+
+# vercel
+.vercel
+.env
+.env.*
+!.env.example
+
+# typescript
+*.tsbuildinfo
